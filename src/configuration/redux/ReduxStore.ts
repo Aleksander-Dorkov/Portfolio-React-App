@@ -1,6 +1,10 @@
 import {combineReducers, createStore} from 'redux';
 import {themeReducer} from "./ThemeReducer";
 
+export interface ReduxState {
+    darkTheme: boolean
+}
+
 const rootReducer = combineReducers({
     darkTheme: themeReducer
 });
