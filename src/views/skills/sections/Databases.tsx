@@ -1,13 +1,8 @@
-import React, {useEffect, useState} from "react";
-import {Skill} from "./Skill";
-import {Grid, Typography} from "@material-ui/core";
-import {SectionTitle} from "./SectionTitle";
+import React from "react";
+import {Skill} from "../skill/Skill";
+import {SectionTitle} from "../SectionTitle";
 
-interface Props {
-
-}
-
-function Databases(props: Props) {
+function Databases() {
     return (
         <>
             <SectionTitle value={'Databases'}/>

@@ -1,6 +1,6 @@
 import React from "react";
-import {Skill} from "./Skill";
-import {SectionTitle} from "./SectionTitle";
+import {Skill} from "../skill/Skill";
+import {SectionTitle} from "../SectionTitle";
 
 
 function FrontEnd() {

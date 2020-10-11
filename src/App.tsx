@@ -1,14 +1,12 @@
 import React, {useEffect, useState} from 'react';
 import {useSelector} from "react-redux";
 import {ReduxState} from "./configuration/redux/ReduxStore";
-import {createMuiTheme, Divider, Grid, Paper, Theme, ThemeProvider, Typography} from "@material-ui/core";
+import {createMuiTheme, Grid, Paper, Theme, ThemeProvider, Typography} from "@material-ui/core";
 import {ThemeBuilder} from "./views/theme/ThemeBuilder";
 import {Footer} from "./views/footer/Footer";
-import {Skill} from "./views/skills/Skill";
-import ScrollAnimation from "react-animate-on-scroll";
-import {BackEnd} from "./views/skills/BackEnd";
-import {FrontEnd} from "./views/skills/FrontEnd";
-import {Databases} from "./views/skills/Databases";
+import {BackEnd} from "./views/skills/sections/BackEnd";
+import {FrontEnd} from "./views/skills/sections/FrontEnd";
+import {Databases} from "./views/skills/sections/Databases";
 
 
 function App() {

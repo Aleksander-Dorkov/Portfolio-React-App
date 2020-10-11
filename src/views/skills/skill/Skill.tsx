@@ -1,5 +1,5 @@
 import React from "react";
-import {Card, CardMedia, Grid, Tooltip, Typography} from "@material-ui/core";
+import {Card, Grid, Typography} from "@material-ui/core";
 import './Skill.css'
 import ScrollAnimation from "react-animate-on-scroll";
 
