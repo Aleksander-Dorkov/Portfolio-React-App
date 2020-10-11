@@ -6,6 +6,7 @@ function Databases() {
     return (
         <>
             <SectionTitle value={'Databases'}/>
+            <span id={'databaseSkills'}></span>
             <Skill
                 svgUrl={'https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg'}
                 tooltip={'PostgreSQL'}

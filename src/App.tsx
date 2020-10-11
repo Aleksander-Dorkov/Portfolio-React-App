@@ -80,11 +80,10 @@ function App() {
                 <ThemeBuilder/>
                 <Paper>
                     <Grid container spacing={0}>
-                        {/*header*/}
                         <Grid item xs={12} id={'header'}>
                             <Header/>
                         </Grid>
-
+                        <div style={{minHeight: '1000px'}}></div>
                         {/*front end and back end skills*/}
                         <Grid container={true} justify={'center'} alignItems={'center'}>
                             <Grid item xs={6}>
@@ -104,8 +103,6 @@ function App() {
                         <Grid item={true} xs={12}>
                             <Footer/>
                         </Grid>
-                        <div style={{minHeight: '1500px'}}>s</div>
-
                     </Grid>
                 </Paper>
             </ThemeProvider>
