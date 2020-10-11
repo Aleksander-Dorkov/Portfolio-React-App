@@ -1,0 +1,7 @@
+.skill-image:hover {
+    transform: scale(1.1);
+}
+
+.skill-image {
+    transition: transform .3s;
+}

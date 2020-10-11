@@ -1,5 +1,5 @@
 import React, {CSSProperties} from "react";
-import {AppBar, Button, Grid, IconButton, Toolbar, Typography} from "@material-ui/core";
+import {AppBar, Grid, Toolbar, Typography} from "@material-ui/core";
 
 function Footer() {
     const footerTextStyle = {

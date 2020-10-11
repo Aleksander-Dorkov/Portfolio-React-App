@@ -1,9 +1,15 @@
 import React, {useEffect, useState} from 'react';
 import {useSelector} from "react-redux";
 import {ReduxState} from "./configuration/redux/ReduxStore";
-import {createMuiTheme, Paper, Theme, ThemeProvider, Typography} from "@material-ui/core";
+import {createMuiTheme, Divider, Grid, Paper, Theme, ThemeProvider, Typography} from "@material-ui/core";
 import {ThemeBuilder} from "./views/theme/ThemeBuilder";
 import {Footer} from "./views/footer/Footer";
+import {Skill} from "./views/skills/Skill";
+import ScrollAnimation from "react-animate-on-scroll";
+import {BackEnd} from "./views/skills/BackEnd";
+import {FrontEnd} from "./views/skills/FrontEnd";
+import {Databases} from "./views/skills/Databases";
+
 
 function App() {
     const darkTheme = useSelector((state: ReduxState) => state.darkTheme);
@@ -70,15 +76,39 @@ function App() {
     }, []);
 
     return (
-        <ThemeProvider theme={(currentTheme === undefined) ? defaultTHeme : currentTheme}>
-            <ThemeBuilder/>
-            <Paper>
-                <Typography variant={'h1'}>
-                    test theme
-                </Typography>
-                <Footer/>
-            </Paper>
-        </ThemeProvider>
+        <>
+            <ThemeProvider theme={(currentTheme === undefined) ? defaultTHeme : currentTheme}>
+                <ThemeBuilder/>
+                <Paper>
+                    <Grid container spacing={0}>
+                        <Grid item xs={12} id={'header'}>
+                            <Typography variant={'h1'}>
+                                header
+                            </Typography>
+                        </Grid>
+                        <Grid container={true} justify={'center'}>
+                            <Grid item xs={5}>
+                                <BackEnd/>
+                            </Grid>
+                            <Grid item={true} xs={1}>
+                                <Divider orientation="vertical" style={{width: '5px'}} className={'m-auto'}/>
+                            </Grid>
+                            <Grid item xs={5}>
+                                <FrontEnd/>
+                            </Grid>
+                        </Grid>
+                        <Divider orientation="horizontal" style={{width: '5px', backgroundColor: 'white'}}
+                                 className={'mr-5'}/>
+                        <Grid container={true} justify={'center'}>
+                            <Databases/>
+                        </Grid>
+                        <Grid item={true} xs={12}>
+                            <Footer/>
+                        </Grid>
+                    </Grid>
+                </Paper>
+            </ThemeProvider>
+        </>
     );
 }
 
