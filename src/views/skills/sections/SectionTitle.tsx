@@ -10,8 +10,8 @@ function SectionTitle(props: Props) {
     return (
         <>
             <Grid item={true} xs={12}>
-                <ScrollAnimation animateIn="animate__backInDown" className={'mb-3 mt-3'}>
-                    <Typography variant={'h2'} align={'center'}>
+                <ScrollAnimation animateIn="animate__backInDown" className={'mb-1 mt-3'}>
+                    <Typography variant={'h3'} align={'center'} style={{fontWeight:'bold'}}>
                         {props.value}
                     </Typography>
                 </ScrollAnimation>

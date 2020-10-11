@@ -1,6 +1,6 @@
 import React from "react";
 import {Skill} from "../skill/Skill";
-import {SectionTitle} from "../SectionTitle";
+import {SectionTitle} from "./SectionTitle";
 
 function Databases() {
     return (

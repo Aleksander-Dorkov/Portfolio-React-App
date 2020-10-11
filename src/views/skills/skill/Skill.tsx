@@ -9,14 +9,13 @@ interface Props {
     animation: string
 }
 
-//fadeInLeft
 function Skill(props: Props) {
     return (
         <>
             <ScrollAnimation animateIn={props.animation}
                              style={{display: 'inline-block'}} className={'skill-image'}>
                 <Card elevation={10}
-                      className={'mr-2 ml-2 mt-2'}
+                      className={'m-2'}
                       style={{minWidth: '200px'}}>
                     <Grid container={true} justify={'center'} alignItems={'center'}>
                         <img src={props.svgUrl}

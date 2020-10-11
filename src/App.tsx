@@ -7,6 +7,7 @@ import {Footer} from "./views/footer/Footer";
 import {BackEnd} from "./views/skills/sections/BackEnd";
 import {FrontEnd} from "./views/skills/sections/FrontEnd";
 import {Databases} from "./views/skills/sections/Databases";
+import {Header} from "./views/header/Header";
 
 
 function App() {
@@ -79,12 +80,13 @@ function App() {
                 <ThemeBuilder/>
                 <Paper>
                     <Grid container spacing={0}>
+                        {/*header*/}
                         <Grid item xs={12} id={'header'}>
-                            <Typography variant={'h1'}>
-                                header
-                            </Typography>
+                            <Header/>
                         </Grid>
-                        <Grid container={true} justify={'center'}>
+
+                        {/*front end and back end skills*/}
+                        <Grid container={true} justify={'center'} alignItems={'center'}>
                             <Grid item xs={6}>
                                 <BackEnd/>
                             </Grid>
@@ -92,12 +94,18 @@ function App() {
                                 <FrontEnd/>
                             </Grid>
                         </Grid>
+
+                        {/*databases*/}
                         <Grid container={true} justify={'center'}>
                             <Databases/>
                         </Grid>
+
+                        {/*footer*/}
                         <Grid item={true} xs={12}>
                             <Footer/>
                         </Grid>
+                        <div style={{minHeight: '1500px'}}>s</div>
+
                     </Grid>
                 </Paper>
             </ThemeProvider>
