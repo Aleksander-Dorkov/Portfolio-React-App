@@ -1,11 +1,16 @@
 import React from "react";
 import {Skill} from "./Skill";
 import {SectionTitle} from "./SectionTitle";
+import {Divider} from "@material-ui/core";
 
 function BackEnd() {
     return (
         <>
             <SectionTitle value={'Back End'}/>
+            <Skill
+                svgUrl={'https://www.vectorlogo.zone/logos/java/java-icon.svg'}
+                tooltip={'Java'}
+                animation={'animate__backInLeft'}/>
             <Skill svgUrl={'https://www.vectorlogo.zone/logos/springio/springio-icon.svg'}
                    tooltip={'Spring Core'}
                    animation={'animate__backInLeft'}/>
@@ -25,17 +30,14 @@ function BackEnd() {
                 tooltip={'Spring Data JPA'}
                 animation={'animate__backInLeft'}/>
             <Skill
-                svgUrl={'https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg'}
-                tooltip={'Spring GraphQL'}
-                animation={'animate__backInLeft'}/>
-            <Skill
                 svgUrl={'https://www.vectorlogo.zone/logos/hibernate/hibernate-icon.svg'}
                 tooltip={'Hibernate'}
                 animation={'animate__backInLeft'}/>
             <Skill
-                svgUrl={'https://www.vectorlogo.zone/logos/java/java-icon.svg'}
-                tooltip={'Java'}
+                svgUrl={'https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg'}
+                tooltip={'Spring GraphQL'}
                 animation={'animate__backInLeft'}/>
+            <Divider orientation="vertical" style={{width: '5px', height: '500xp'}}/>
         </>
     )
 }

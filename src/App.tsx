@@ -87,18 +87,13 @@ function App() {
                             </Typography>
                         </Grid>
                         <Grid container={true} justify={'center'}>
-                            <Grid item xs={5}>
+                            <Grid item xs={6}>
                                 <BackEnd/>
                             </Grid>
-                            <Grid item={true} xs={1}>
-                                <Divider orientation="vertical" style={{width: '5px'}} className={'m-auto'}/>
-                            </Grid>
-                            <Grid item xs={5}>
+                            <Grid item xs={6}>
                                 <FrontEnd/>
                             </Grid>
                         </Grid>
-                        <Divider orientation="horizontal" style={{width: '5px', backgroundColor: 'white'}}
-                                 className={'mr-5'}/>
                         <Grid container={true} justify={'center'}>
                             <Databases/>
                         </Grid>

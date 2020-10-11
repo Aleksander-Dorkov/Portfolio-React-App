@@ -1,5 +1,5 @@
 import React from "react";
-import {Tooltip, Typography} from "@material-ui/core";
+import {Card, CardMedia, Grid, Tooltip, Typography} from "@material-ui/core";
 import './Skill.css'
 import ScrollAnimation from "react-animate-on-scroll";
 
@@ -14,20 +14,24 @@ function Skill(props: Props) {
     return (
         <>
             <ScrollAnimation animateIn={props.animation}
-                             style={{display: 'inline-block'}}>
-                <Tooltip title={props.tooltip} placement={'top'}>
-                    <img src={props.svgUrl}
-                         className={'skill-image mr-3 ml-3'}
-                         alt={'not available'}
-                         width={150}
-                         height={150}/>
-                </Tooltip>
-                <Typography variant="body1"
-                            align={'center'}
-                            style={{fontSize: '1.4rem', fontWeight: 'bold'}}
-                            className={'mt-2 mb-2'}>
-                    {props.tooltip}
-                </Typography>
+                             style={{display: 'inline-block'}} className={'skill-image'}>
+                <Card elevation={10}
+                      className={'mr-2 ml-2 mt-2'}
+                      style={{minWidth: '200px'}}>
+                    <Grid container={true} justify={'center'} alignItems={'center'}>
+                        <img src={props.svgUrl}
+                             className={'mt-2'}
+                             alt={'not available'}
+                             width={150}
+                             height={150}/>
+                    </Grid>
+                    <Typography variant="body1"
+                                align={'center'}
+                                style={{fontSize: '1.4rem', fontWeight: 'bold'}}
+                                className={'mt-2 mb-2'}>
+                        {props.tooltip}
+                    </Typography>
+                </Card>
             </ScrollAnimation>
         </>
     )
