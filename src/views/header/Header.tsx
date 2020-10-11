@@ -1,10 +1,8 @@
 import React from "react";
-import {AppBar, Button, Toolbar, Typography} from "@material-ui/core";
-import {Link} from "react-router-dom";
+import {AppBar, Toolbar} from "@material-ui/core";
 import HomeIcon from '@material-ui/icons/Home';
 import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
 import AccountTreeIcon from '@material-ui/icons/AccountTree';
-import {HashLink} from "react-router-hash-link";
 import {HeaderLink} from "./HeaderLink";
 
 interface Props {

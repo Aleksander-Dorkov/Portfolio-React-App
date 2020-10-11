@@ -8,6 +8,7 @@ import {BackEnd} from "./views/skills/sections/BackEnd";
 import {FrontEnd} from "./views/skills/sections/FrontEnd";
 import {Databases} from "./views/skills/sections/Databases";
 import {Header} from "./views/header/Header";
+import {ParallaxHeader} from "./views/parallax_images/ParallaxHeader";
 
 
 function App() {
@@ -83,23 +84,27 @@ function App() {
                         <Grid item xs={12} id={'header'}>
                             <Header/>
                         </Grid>
-                        <div style={{minHeight: '1000px'}}></div>
-                        {/*front end and back end skills*/}
-                        <Grid container={true} justify={'center'} alignItems={'center'}>
-                            <Grid item xs={6}>
-                                <BackEnd/>
-                            </Grid>
-                            <Grid item xs={6}>
-                                <FrontEnd/>
-                            </Grid>
+                    </Grid>
+                    <Grid container={true} spacing={0} justify={'center'} style={{marginTop: '50px'}}>
+                        <ParallaxHeader/>
+                    </Grid>
+                    {/*front end and back end skills*/}
+                    <Grid container={true} justify={'center'} alignItems={'center'}>
+                        <Grid item xs={6}>
+                            <BackEnd/>
                         </Grid>
-
-                        {/*databases*/}
-                        <Grid container={true} justify={'center'}>
-                            <Databases/>
+                        <Grid item xs={6}>
+                            <FrontEnd/>
                         </Grid>
+                    </Grid>
 
-                        {/*footer*/}
+                    {/*databases*/}
+                    <Grid container={true} justify={'center'}>
+                        <Databases/>
+                    </Grid>
+
+                    {/*footer*/}
+                    <Grid container spacing={0}>
                         <Grid item={true} xs={12}>
                             <Footer/>
                         </Grid>

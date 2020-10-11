@@ -1,7 +1,7 @@
 import React from "react";
 import {Skill} from "../skill/Skill";
 import {SectionTitle} from "./SectionTitle";
-import {Divider, Grid} from "@material-ui/core";
+import {Grid} from "@material-ui/core";
 
 function BackEnd() {
     return (

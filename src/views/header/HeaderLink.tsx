@@ -15,7 +15,9 @@ function HeaderLink(props: Props) {
                 to={props.linkPath}
                 smooth={true}>
             {props.svg}
-            <Typography variant={'h6'} style={{fontWeight: 'bold'}}>
+            <Typography variant={'h6'}
+                        style={{fontWeight: 'bold'}}
+                        className={'ml-1'}>
                 {props.linkName}
             </Typography>
         </Button>
