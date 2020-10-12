@@ -1,14 +1,18 @@
 import React, {CSSProperties} from "react";
-import {Grid, Paper} from "@material-ui/core";
+import {Grid, IconButton, Typography} from "@material-ui/core";
 import {Parallax} from "react-parallax";
+import GetAppIcon from '@material-ui/icons/GetApp';
+import './ParallaxHeader.css'
+import GitHubIcon from '@material-ui/icons/GitHub';
+import {Link} from "react-router-dom";
 
 function ParallaxHeader() {
-
-    const insideStyles = {
+    const nameStyles = {
+        color: 'white',
         padding: 20,
         position: "absolute",
-        top: "50%",
-        left: "50%",
+        top: "45%",
+        left: "20%",
         transform: "translate(-50%,-50%)"
     } as CSSProperties;
 
@@ -17,10 +21,28 @@ function ParallaxHeader() {
     return (
         <Grid container={true} spacing={0} justify={'center'} style={{marginTop: '10px'}}>
             <Parallax bgImage={image1}
-                      strength={700}
+                      strength={800}
                       style={{width: '100%'}}>
-                <div style={{height: 1100}}>
-                    <Paper style={insideStyles}>HTML inside the parallax</Paper>
+                <div style={{height: 1200}}>
+                    <div style={nameStyles}>
+                        <Typography variant={'h1'} style={{display: 'inline'}}>Alexander</Typography>
+                        <Typography variant={'h1'} style={{display: 'inline', color: '#00affb'}}> Dorkov</Typography>
+                        <Typography variant={'h3'}>I am a software engineer</Typography>
+
+                        <IconButton color="inherit" aria-label="upload picture" component="span">
+                            <a href="https://github.com/Aleksander-D-92" target={'_blank'}
+                               className={'parallax-link'}><GitHubIcon fontSize={'large'}/>
+                            </a>
+                        </IconButton>
+                        <Typography variant={'h5'} style={{display: 'inline'}}>Github</Typography>
+
+                        <IconButton color="inherit" aria-label="upload picture" component="span">
+                            <a href="https://www.docdroid.net/OzLGWJz/resume-pdf" target={'_blank'}
+                               className={'parallax-link'}><GetAppIcon fontSize={'large'}/>
+                            </a>
+                               </IconButton>
+                        <Typography variant={'h5'} style={{display: 'inline'}}>Resume</Typography>
+                    </div>
                 </div>
             </Parallax>
         </Grid>

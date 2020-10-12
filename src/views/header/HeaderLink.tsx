@@ -11,12 +11,12 @@ interface Props {
 function HeaderLink(props: Props) {
     return (
         <Button color={'inherit'}
+                className={'ml-5'}
                 component={HashLink}
                 to={props.linkPath}
                 smooth={true}>
             {props.svg}
             <Typography variant={'h6'}
-                        style={{fontWeight: 'bold'}}
                         className={'ml-1'}>
                 {props.linkName}
             </Typography>

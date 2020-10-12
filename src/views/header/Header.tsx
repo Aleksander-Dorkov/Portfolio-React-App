@@ -13,7 +13,7 @@ function Header(props: Props) {
     return (
         <>
             <span id={'topOfThePage'}></span>
-            <AppBar position="fixed" color={'secondary'}>
+            <AppBar position="fixed" color={'inherit'}>
                 <Toolbar>
                     <HeaderLink svg={<HomeIcon/>}
                                 linkName={'Home'}
