@@ -1,7 +1,9 @@
 @import '~bootstrap/dist/css/bootstrap-grid.css';
+
 html {
     scroll-behavior: smooth;
 }
+
 html, body, #root {
     height: 100%;
     margin: 0;
@@ -9,4 +11,8 @@ html, body, #root {
 
 #app-body {
     min-height: 1000px;
+}
+
+video {
+    border-radius: 50px;
 }

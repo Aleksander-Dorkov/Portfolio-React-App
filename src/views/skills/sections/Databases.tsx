@@ -1,12 +1,11 @@
 import React from "react";
 import {Skill} from "../skill/Skill";
-import {SectionTitle} from "./SectionTitle";
+import {SkillSectionTitle} from "./SkillSectionTitle";
 
 function Databases() {
     return (
         <>
-            <SectionTitle value={'Databases'}/>
-            <span id={'databaseSkills'}></span>
+            <SkillSectionTitle value={'Databases'}/>
             <Skill
                 svgUrl={'https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg'}
                 tooltip={'PostgreSQL'}

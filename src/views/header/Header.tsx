@@ -3,6 +3,7 @@ import {AppBar, Toolbar} from "@material-ui/core";
 import HomeIcon from '@material-ui/icons/Home';
 import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
 import AccountTreeIcon from '@material-ui/icons/AccountTree';
+import InfoIcon from '@material-ui/icons/Info';
 import {HeaderLink} from "./HeaderLink";
 
 interface Props {
@@ -20,10 +21,13 @@ function Header(props: Props) {
                                 linkPath={'#topOfThePage'}/>
                     <HeaderLink svg={<LibraryBooksIcon/>}
                                 linkName={'Skills'}
-                                linkPath={'#databaseSkills'}/>
+                                linkPath={'#skillSection'}/>
                     <HeaderLink svg={<AccountTreeIcon/>}
                                 linkName={'Projects'}
-                                linkPath={'#projects'}/>
+                                linkPath={'#projectSection'}/>
+                    <HeaderLink svg={<InfoIcon/>}
+                                linkName={'About Me'}
+                                linkPath={'#aboutMeSection'}/>
                 </Toolbar>
             </AppBar>
         </>

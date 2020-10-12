@@ -1,13 +1,13 @@
 import React from "react";
 import {Skill} from "../skill/Skill";
-import {SectionTitle} from "./SectionTitle";
+import {SkillSectionTitle} from "./SkillSectionTitle";
 import {Grid} from "@material-ui/core";
 
 
 function FrontEnd() {
     return (
         <>
-            <SectionTitle value={'Front End'}/>
+            <SkillSectionTitle value={'Front End'}/>
             <Grid container={true} justify={'center'} alignItems={'center'}>
                 <Skill
                     svgUrl={'https://cdn.worldvectorlogo.com/logos/javascript.svg'}

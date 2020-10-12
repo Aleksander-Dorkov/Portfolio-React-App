@@ -11,6 +11,7 @@ import {Header} from "./views/header/Header";
 import {ParallaxHeader} from "./views/parallax_images/ParallaxHeader";
 import {DARK_MUI_THEME, LIGHT_MUI_THEME} from "./views/theme/variables";
 import {SectionTitle} from "./views/section_title/SectionTitle";
+import {MovieDB} from "./views/projects/MovieDB";
 
 
 function App() {
@@ -50,8 +51,9 @@ function App() {
                     <Grid container={true} spacing={0} justify={'center'} style={{marginTop: '50px'}}>
                         <ParallaxHeader/>
                     </Grid>
+
                     {/*front end and back end skills*/}
-                    <SectionTitle name={'Skills'}/>
+                    <SectionTitle name={'Skills'} id={'skillSection'}/>
                     <Grid container={true} justify={'center'} alignItems={'center'}>
                         <Grid item xs={6}>
                             <BackEnd/>
@@ -65,12 +67,16 @@ function App() {
                     <Grid container={true} justify={'center'}>
                         <Databases/>
                     </Grid>
-
-                    <SectionTitle name={'Projects'}/>
+                    {/*projects*/}
+                    <SectionTitle name={'Projects'} id={'projectSection'}/>
+                    <Grid container={true} justify={'center'}>
+                        <MovieDB/>
+                    </Grid>
+                    {/*about me*/}
+                    <SectionTitle name={'About Me'} id={'aboutMeSection'}/>
                     <Grid container={true} justify={'center'}>
 
                     </Grid>
-                    <SectionTitle name={'About Me'}/>
                     {/*footer*/}
                     <Grid container spacing={0}>
                         <Grid item={true} xs={12}>

@@ -1,12 +1,12 @@
 import React from "react";
 import {Skill} from "../skill/Skill";
-import {SectionTitle} from "./SectionTitle";
+import {SkillSectionTitle} from "./SkillSectionTitle";
 import {Grid} from "@material-ui/core";
 
 function BackEnd() {
     return (
         <>
-            <SectionTitle value={'Back End'}/>
+            <SkillSectionTitle value={'Back End'}/>
             <Grid container={true} justify={'center'} alignItems={'center'}>
                 <Skill
                     svgUrl={'https://www.vectorlogo.zone/logos/java/java-icon.svg'}

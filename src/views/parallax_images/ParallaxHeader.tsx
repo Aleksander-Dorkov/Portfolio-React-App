@@ -11,7 +11,7 @@ function ParallaxHeader() {
         padding: 20,
         position: "absolute",
         top: "45%",
-        left: "20%",
+        left: "380px",
         transform: "translate(-50%,-50%)"
     } as CSSProperties;
 

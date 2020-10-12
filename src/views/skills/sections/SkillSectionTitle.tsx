@@ -6,11 +6,12 @@ interface Props {
     value: string
 }
 
-function SectionTitle(props: Props) {
+function SkillSectionTitle(props: Props) {
     return (
         <>
             <Grid item={true} xs={12}>
-                <ScrollAnimation animateIn="animate__backInDown" className={'mb-1 mt-3'}>
+                <ScrollAnimation animateIn="animate__backInDown"
+                                 className={'mb-1 mt-3'}>
                     <Typography variant={'h3'} align={'center'} style={{fontWeight:'bold'}}>
                         {props.value}
                     </Typography>
@@ -20,4 +21,4 @@ function SectionTitle(props: Props) {
     )
 }
 
-export {SectionTitle}
+export {SkillSectionTitle}
