@@ -4,7 +4,6 @@ import {Parallax} from "react-parallax";
 import GetAppIcon from '@material-ui/icons/GetApp';
 import './ParallaxHeader.css'
 import GitHubIcon from '@material-ui/icons/GitHub';
-import {Link} from "react-router-dom";
 
 function ParallaxHeader() {
     const nameStyles = {
@@ -25,19 +24,18 @@ function ParallaxHeader() {
                       style={{width: '100%'}}>
                 <div style={{height: 1200}}>
                     <div style={nameStyles}>
-                        <Typography variant={'h1'} style={{display: 'inline'}}>Alexander</Typography>
+                        <Typography variant={'h1'} style={{display: 'inline'}} className={'ml-3'}>Alexander</Typography>
                         <Typography variant={'h1'} style={{display: 'inline', color: '#00affb'}}> Dorkov</Typography>
-                        <Typography variant={'h3'}>I am a software engineer</Typography>
+                        <Typography variant={'h3'} className={'ml-3'}>Software engineer</Typography>
 
                         <IconButton color="inherit" aria-label="upload picture" component="span">
-                            <a href="https://github.com/Aleksander-D-92" target={'_blank'}
+                            <a href="https://github.com/Aleksander-D-92" target={'_blank'} rel="noopener noreferrer"
                                className={'parallax-link'}><GitHubIcon fontSize={'large'}/>
                             </a>
                         </IconButton>
                         <Typography variant={'h5'} style={{display: 'inline'}}>Github</Typography>
-
                         <IconButton color="inherit" aria-label="upload picture" component="span">
-                            <a href="https://www.docdroid.net/OzLGWJz/resume-pdf" target={'_blank'}
+                            <a href="https://www.docdroid.net/OzLGWJz/resume-pdf" target={'_blank'} rel="noopener noreferrer"
                                className={'parallax-link'}><GetAppIcon fontSize={'large'}/>
                             </a>
                                </IconButton>

@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {useSelector} from "react-redux";
 import {ReduxState} from "./configuration/redux/ReduxStore";
-import {createMuiTheme, Grid, Paper, Theme, ThemeProvider, Typography} from "@material-ui/core";
+import {createMuiTheme, Grid, Paper, Theme, ThemeProvider} from "@material-ui/core";
 import {ThemeBuilder} from "./views/theme/ThemeBuilder";
 import {Footer} from "./views/footer/Footer";
 import {BackEnd} from "./views/skills/sections/BackEnd";
@@ -9,58 +9,20 @@ import {FrontEnd} from "./views/skills/sections/FrontEnd";
 import {Databases} from "./views/skills/sections/Databases";
 import {Header} from "./views/header/Header";
 import {ParallaxHeader} from "./views/parallax_images/ParallaxHeader";
+import {DARK_MUI_THEME, LIGHT_MUI_THEME} from "./views/theme/variables";
+import {SectionTitle} from "./views/section_title/SectionTitle";
 
 
 function App() {
     const darkTheme = useSelector((state: ReduxState) => state.darkTheme);
     const [currentTheme, setCurrentTheme] = useState<Theme>();
 
-    const defaultTHeme = createMuiTheme({
-        palette: {
-            type: "light",
-            // primary: purple
-        },
-        overrides: {
-            MuiTooltip: {
-                tooltip: {
-                    fontSize: "0.9em",
-                }
-            }
-        }
-    });
+    const defaultTHeme = createMuiTheme(DARK_MUI_THEME);
     useEffect(() => {
         if (darkTheme) {
-            setCurrentTheme(createMuiTheme({
-                palette: {
-                    type: "dark",
-                    primary: {
-                        main: '#90caf9'
-                    },
-                    secondary: {main: '#00e676'}
-                    // primary: purple
-                },
-                overrides: {
-                    MuiTooltip: {
-                        tooltip: {
-                            fontSize: "0.9em",
-                        }
-                    }
-                }
-            }));
+            setCurrentTheme(createMuiTheme(DARK_MUI_THEME));
         } else {
-            setCurrentTheme(createMuiTheme({
-                palette: {
-                    type: "light",
-                    // primary: purple
-                },
-                overrides: {
-                    MuiTooltip: {
-                        tooltip: {
-                            fontSize: "0.9em",
-                        }
-                    }
-                }
-            }));
+            setCurrentTheme(createMuiTheme(LIGHT_MUI_THEME));
         }
 
     }, [darkTheme])
@@ -89,6 +51,7 @@ function App() {
                         <ParallaxHeader/>
                     </Grid>
                     {/*front end and back end skills*/}
+                    <SectionTitle name={'Skills'}/>
                     <Grid container={true} justify={'center'} alignItems={'center'}>
                         <Grid item xs={6}>
                             <BackEnd/>
@@ -103,6 +66,11 @@ function App() {
                         <Databases/>
                     </Grid>
 
+                    <SectionTitle name={'Projects'}/>
+                    <Grid container={true} justify={'center'}>
+
+                    </Grid>
+                    <SectionTitle name={'About Me'}/>
                     {/*footer*/}
                     <Grid container spacing={0}>
                         <Grid item={true} xs={12}>
