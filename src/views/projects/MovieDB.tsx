@@ -8,9 +8,9 @@ import {RdbmsSvg} from "./svgs/RdbmsSvg";
 import {ApiSvg} from "./svgs/ApiSvg";
 import {ProjectSubTitle} from "./project_section/ProjectSubTitle";
 import {ProjectTitle} from "./project_section/ProjectTitle";
+import {ProjectImage} from "./project_section/ProjectIamge";
 
 function MovieDB() {
-    const imageUrl = 'https://i.ibb.co/hKVWzWP/Untitled.png';
     const projectDescription = `
         SPA WebApp that allows users to brows movies, tv shows, actors. Add favorites, submit comments
     `
@@ -27,11 +27,7 @@ function MovieDB() {
                                       githubBackEnd={'https://github.com/Aleksander-D-92/Movie-DB-GraphQL-API'}
                                       githubFrontEnd={'https://github.com/Aleksander-D-92/Movie-DB-Front-End'}
                                       deployedUrl={'https://online-movie-database.netlify.app/'}/>
-                        <Grid item={true} xs={12} md={12} lg={9}>
-                            <img src={imageUrl}
-                                 alt={'not available'}
-                                 style={{width: '100%', height: 'auto'}}/>
-                        </Grid>
+                        <ProjectImage imageUrl={'https://i.ibb.co/hKVWzWP/Untitled.png'}/>
                         <CardContent>
                             <ProjectSubTitle value={'Description'} description={projectDescription}/>
                             <ProjectSubTitle value={'APIs'} description={'Uses 2 APIs'}/>
