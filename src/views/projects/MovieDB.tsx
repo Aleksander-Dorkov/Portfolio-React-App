@@ -5,6 +5,8 @@ import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import {MavenSvg} from "./svgs/MavenSvg";
 import {NpmSvg} from "./svgs/NpmSvg";
 import {ListItem} from "./list/ListItem";
+import {ListItemLink} from "./list/ListItemLink";
+import {RdbmsSvg} from "./svgs/RdbmsSvg";
 
 function MovieDB() {
     const imageUrl = 'https://i.ibb.co/hKVWzWP/Untitled.png';
@@ -73,34 +75,17 @@ function MovieDB() {
                                         <ul className={'technologies-used-list'}>
                                             <ListItem svg={<MavenSvg/>} value={'Spring Security'}/>
                                             <ListItem svg={<MavenSvg/>} value={'JJWT'} description={' JWT generator'}/>
-                                            <li>
-                                                <MavenSvg/>
-                                                <Typography className={'code-text'}>
-                                                    GraphQL Java Kickstart
-                                                </Typography>
-                                            </li>
+                                            <ListItem svg={<MavenSvg/>} value={'GraphQL Java Kickstart'}/>
                                             <ul className={'technologies-used-list'}>
-                                                <li>
-                                                    <MavenSvg/>
-                                                    <a href="https://theatre-database.herokuapp.com/playground">
-                                                        <Typography className={'code-text'}>Playground (click)
-                                                        </Typography>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <MavenSvg/>
-                                                    <a href="https://theatre-database.herokuapp.com/graphiql">
-                                                        <Typography className={'code-text'}>Graph<i>i</i>QL (click)
-                                                        </Typography>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <MavenSvg/>
-                                                    <a href="https://theatre-database.herokuapp.com/voyager">
-                                                        <Typography className={'code-text'}>Voyager (click)
-                                                        </Typography>
-                                                    </a>
-                                                </li>
+                                                <ListItemLink svg={<MavenSvg/>}
+                                                              href={'https://theatre-database.herokuapp.com/playground'}
+                                                              value={'Playground (click)'}/>
+                                                <ListItemLink svg={<MavenSvg/>}
+                                                              href={'https://theatre-database.herokuapp.com/graphiql'}
+                                                              value={`GraphiQL (click)`}/>
+                                                <ListItemLink svg={<MavenSvg/>}
+                                                              href={'https://theatre-database.herokuapp.com/voyager'}
+                                                              value={'Voyager (click)'}/>
                                             </ul>
                                             <ListItem svg={<MavenSvg/>} value={'Spring Web'}/>
                                             <ListItem svg={<MavenSvg/>} value={'Spring Data JPA'}/>
@@ -133,7 +118,7 @@ function MovieDB() {
                                         <PlayArrowIcon className={'list-svg'}/>
                                         <li>Database</li>
                                         <ul className={'technologies-used-list'}>
-                                            <li><Typography className={'code-text'}>PostgreSQL</Typography> RDBMS</li>
+                                            <ListItem svg={<RdbmsSvg/>} value={'PostgreSQL'}/>
                                         </ul>
 
                                     </ul>
