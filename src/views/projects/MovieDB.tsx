@@ -1,12 +1,13 @@
 import React from "react";
-import {Card, CardContent, Chip, Grid, Tooltip, Typography} from "@material-ui/core";
+import {Card, CardContent, Grid, Typography} from "@material-ui/core";
 import './css/ProjectStyles.css'
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import {MavenSvg} from "./svgs/MavenSvg";
 import {NpmSvg} from "./svgs/NpmSvg";
-import {ListItem} from "./list/ListItem";
+import {ListItemCode} from "./list/ListItemCode";
 import {ListItemLink} from "./list/ListItemLink";
 import {RdbmsSvg} from "./svgs/RdbmsSvg";
+import {ApiSvg} from "./svgs/ApiSvg";
 
 function MovieDB() {
     const imageUrl = 'https://i.ibb.co/hKVWzWP/Untitled.png';
@@ -43,39 +44,25 @@ function MovieDB() {
                                 <ul className={'root-list'} style={{paddingLeft: '10px'}}>
                                     <li>Uses 2 APIs</li>
                                     <ul className={'project-description-list'}>
-                                        <li>
-                                            <a href="https://theatre-database.herokuapp.com/playground"
-                                               target={'_blank'}
-                                               className={'common-link'}
-                                               rel="noopener noreferrer">
-                                                <Typography variant={'subtitle1'}
-                                                            color={'textPrimary'}>
-                                                    Spring Boot GraphQL - Written by me (click)
-                                                </Typography>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="https://developers.themoviedb.org/3/getting-started/introduction"
-                                               target={'_blank'}
-                                               className={'common-link'}
-                                               rel="noopener noreferrer">
-                                                <Typography variant={'subtitle1'}
-                                                            color={'textPrimary'}>
-                                                    The Movie Database REST API - Public API (click)
-                                                </Typography>
-                                            </a>
-                                        </li>
+                                        <ListItemLink svg={<ApiSvg/>}
+                                                      href={'https://theatre-database.herokuapp.com/playground'}
+                                                      value={'Spring Boot GraphQL (click)'}
+                                                      description={'- Written by me'}
+                                        />
+                                        <ListItemLink svg={<ApiSvg/>}
+                                                      href={'https://developers.themoviedb.org/3/getting-started/introduction'}
+                                                      value={'The Movie Database REST API (click)'}
+                                                      description={' - Public API'}
+                                        />
                                     </ul>
-
                                     <li>Technologies Used</li>
                                     <ul className={'technologies-list'}>
                                         <PlayArrowIcon className={'list-svg'}/>
                                         <li>Back End</li>
                                         <ul className={'technologies-used-list'}>
-                                            <ListItem svg={<MavenSvg/>} value={'Spring Security'}/>
-                                            <ListItem svg={<MavenSvg/>} value={'JJWT'} description={' JWT generator'}/>
-                                            <ListItem svg={<MavenSvg/>} value={'GraphQL Java Kickstart'}/>
+                                            <ListItemCode svg={<MavenSvg/>} value={'Spring Security'}/>
+                                            <ListItemCode svg={<MavenSvg/>} value={'JJWT'} description={' JWT generator'}/>
+                                            <ListItemCode svg={<MavenSvg/>} value={'GraphQL Java Kickstart'}/>
                                             <ul className={'technologies-used-list'}>
                                                 <ListItemLink svg={<MavenSvg/>}
                                                               href={'https://theatre-database.herokuapp.com/playground'}
@@ -87,38 +74,38 @@ function MovieDB() {
                                                               href={'https://theatre-database.herokuapp.com/voyager'}
                                                               value={'Voyager (click)'}/>
                                             </ul>
-                                            <ListItem svg={<MavenSvg/>} value={'Spring Web'}/>
-                                            <ListItem svg={<MavenSvg/>} value={'Spring Data JPA'}/>
-                                            <ListItem svg={<MavenSvg/>} value={'Hibernate Validator'}/>
-                                            <ListItem svg={<MavenSvg/>} value={'Spring Actuator'}/>
-                                            <ListItem svg={<MavenSvg/>} value={'ModelMapper'}/>
-                                            <ListItem svg={<MavenSvg/>} value={'Spring Devtools'}/>
-                                            <ListItem svg={<MavenSvg/>} value={'Lombok'}/>
+                                            <ListItemCode svg={<MavenSvg/>} value={'Spring Web'}/>
+                                            <ListItemCode svg={<MavenSvg/>} value={'Spring Data JPA'}/>
+                                            <ListItemCode svg={<MavenSvg/>} value={'Hibernate Validator'}/>
+                                            <ListItemCode svg={<MavenSvg/>} value={'Spring Actuator'}/>
+                                            <ListItemCode svg={<MavenSvg/>} value={'ModelMapper'}/>
+                                            <ListItemCode svg={<MavenSvg/>} value={'Spring Devtools'}/>
+                                            <ListItemCode svg={<MavenSvg/>} value={'Lombok'}/>
                                         </ul>
 
                                         <PlayArrowIcon className={'list-svg'}/>
                                         <li>Front End</li>
                                         <ul className={'technologies-used-list'}>
-                                            <ListItem svg={<NpmSvg/>} value={'Typescript'}/>
-                                            <ListItem svg={<NpmSvg/>} value={'React'}/>
-                                            <ListItem svg={<NpmSvg/>} value={'React Router Dom'}/>
-                                            <ListItem svg={<NpmSvg/>} value={'React Redux'}/>
-                                            <ListItem svg={<NpmSvg/>} value={'Apollo/client'}
-                                                      description={' For GraphQL API calls'}/>
-                                            <ListItem svg={<NpmSvg/>} value={'Material UI'}
-                                                      description={' Component UI library'}/>
-                                            <ListItem svg={<NpmSvg/>} value={'React Toastify'}/>
-                                            <ListItem svg={<NpmSvg/>} value={'React Animate On Scroll'}/>
-                                            <ListItem svg={<NpmSvg/>} value={'Axios'}/>
-                                            <ListItem svg={<NpmSvg/>} value={'lodash'}/>
-                                            <ListItem svg={<NpmSvg/>} value={'material-table'}
-                                                      description={' Enhanced table for Material UI'}/>
+                                            <ListItemCode svg={<NpmSvg/>} value={'Typescript'}/>
+                                            <ListItemCode svg={<NpmSvg/>} value={'React'}/>
+                                            <ListItemCode svg={<NpmSvg/>} value={'React Router Dom'}/>
+                                            <ListItemCode svg={<NpmSvg/>} value={'React Redux'}/>
+                                            <ListItemCode svg={<NpmSvg/>} value={'Apollo/client'}
+                                                          description={' For GraphQL API calls'}/>
+                                            <ListItemCode svg={<NpmSvg/>} value={'Material UI'}
+                                                          description={' Component UI library'}/>
+                                            <ListItemCode svg={<NpmSvg/>} value={'React Toastify'}/>
+                                            <ListItemCode svg={<NpmSvg/>} value={'React Animate On Scroll'}/>
+                                            <ListItemCode svg={<NpmSvg/>} value={'Axios'}/>
+                                            <ListItemCode svg={<NpmSvg/>} value={'lodash'}/>
+                                            <ListItemCode svg={<NpmSvg/>} value={'material-table'}
+                                                          description={' Enhanced table for Material UI'}/>
                                         </ul>
 
                                         <PlayArrowIcon className={'list-svg'}/>
                                         <li>Database</li>
                                         <ul className={'technologies-used-list'}>
-                                            <ListItem svg={<RdbmsSvg/>} value={'PostgreSQL'}/>
+                                            <ListItemCode svg={<RdbmsSvg/>} value={'PostgreSQL'}/>
                                         </ul>
 
                                     </ul>

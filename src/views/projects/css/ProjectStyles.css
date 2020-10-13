@@ -15,19 +15,11 @@
 
 }
 
+.project-description-list {
+    list-style-type: none;
+}
+
 .technologies-used-list {
     list-style-type: none;
     padding-left: 15px;
-}
-
-
-
-
-
-.code-text {
-    color: #dd7979;
-    background-color: #1b1d23;
-    border-radius: 5px;
-    padding: 2px 4px;
-    display: inline-block;
 }

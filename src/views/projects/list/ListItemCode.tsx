@@ -15,7 +15,7 @@ const codeTextStyles = {
     display: 'inline-block',
 } as CSSProperties
 
-function ListItem(props: Props) {
+function ListItemCode(props: Props) {
     return (
         <>
             <li>
@@ -26,4 +26,4 @@ function ListItem(props: Props) {
     )
 }
 
-export {ListItem, codeTextStyles}
+export {ListItemCode, codeTextStyles}
