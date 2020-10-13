@@ -1,0 +1,46 @@
+.common-link:visited {
+    text-decoration: none;
+}
+
+.common-link {
+    text-decoration: none;
+}
+
+.technologies-list {
+    list-style: none;
+}
+
+.technologies-list > li {
+    display: inline-block;
+
+}
+
+.technologies-used-list {
+    list-style-type: none;
+    padding-left: 15px;
+}
+
+.technologies-used-list-svg {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: relative;
+    top: 10px;
+}
+
+.technologies-used-list > li {
+    margin: 5px 0;
+}
+
+.list-svg {
+    position: relative;
+    top: 6px;
+}
+
+.code-text {
+    color: #dd7979;
+    background-color: #1b1d23;
+    border-radius: 5px;
+    padding: 2px 4px;
+    display: inline-block;
+}
