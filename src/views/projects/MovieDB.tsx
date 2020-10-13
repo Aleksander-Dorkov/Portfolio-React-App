@@ -6,7 +6,7 @@ import {ListItemCode} from "./list/ListItemCode";
 import {ListItemLink} from "./list/ListItemLink";
 import {RdbmsSvg} from "./svgs/RdbmsSvg";
 import {ApiSvg} from "./svgs/ApiSvg";
-import {DescriptionTitle} from "./project_section/DescriptionTitle";
+import {ProjectSubTitle} from "./project_section/ProjectSubTitle";
 import {ProjectTitle} from "./project_section/ProjectTitle";
 
 function MovieDB() {
@@ -22,9 +22,8 @@ function MovieDB() {
         <>
             <Grid container={true} justify={'center'} className={'mt-5'}>
                 <Grid item={true} xs={11} md={11} lg={11}>
-                    <Card>
-                        <ProjectTitle url={'https://online-movie-database.netlify.app/'}
-                                      name={'Online Movie Database (click)'}
+                    <Card elevation={10}>
+                        <ProjectTitle name={'Online Movie Database'}
                                       githubBackEnd={'https://github.com/Aleksander-D-92/Movie-DB-GraphQL-API'}
                                       githubFrontEnd={'https://github.com/Aleksander-D-92/Movie-DB-Front-End'}
                                       deployedUrl={'https://online-movie-database.netlify.app/'}/>
@@ -34,8 +33,8 @@ function MovieDB() {
                                  style={{width: '100%', height: 'auto'}}/>
                         </Grid>
                         <CardContent>
-                            <DescriptionTitle value={'Description'} description={projectDescription}/>
-                            <DescriptionTitle value={'APIs'} description={'Uses 2 APIs'}/>
+                            <ProjectSubTitle value={'Description'} description={projectDescription}/>
+                            <ProjectSubTitle value={'APIs'} description={'Uses 2 APIs'}/>
                             <ul style={listStyles}>
                                 <ListItemLink svg={<ApiSvg/>}
                                               href={'https://theatre-database.herokuapp.com/playground'}
@@ -48,7 +47,7 @@ function MovieDB() {
                                               description={' - Public API. Handles the rest of the operations.'}
                                 />
                             </ul>
-                            <DescriptionTitle value={'Back End Dependencies'}/>
+                            <ProjectSubTitle value={'Back End Dependencies'}/>
                             <ul style={listStyles}>
                                 <ListItemCode svg={<MavenSvg/>} value={'Spring Security'}/>
                                 <ListItemCode svg={<MavenSvg/>} value={'JJWT'} description={'- JWT generator'}/>
@@ -73,7 +72,7 @@ function MovieDB() {
                                 <ListItemCode svg={<MavenSvg/>} value={'Lombok'}/>
                             </ul>
 
-                            <DescriptionTitle value={'Front End Dependencies'}/>
+                            <ProjectSubTitle value={'Front End Dependencies'}/>
                             <ul style={listStyles}>
                                 <ListItemCode svg={<NpmSvg/>} value={'Typescript'}/>
                                 <ListItemCode svg={<NpmSvg/>} value={'React'}/>
@@ -91,7 +90,7 @@ function MovieDB() {
                                               description={'- Enhanced table for Material UI'}/>
                             </ul>
 
-                            <DescriptionTitle value={'Database'}/>
+                            <ProjectSubTitle value={'Database'}/>
                             <ul style={listStyles}>
                                 <ListItemCode svg={<RdbmsSvg/>} value={'PostgreSQL'}/>
                             </ul>

@@ -6,7 +6,7 @@ interface Props {
     description?: string
 }
 
-function DescriptionTitle(props: Props) {
+function ProjectSubTitle(props: Props) {
     const styles = {fontWeight: 'bold', marginTop: '10px'} as CSSProperties
     return (
         <>
@@ -20,4 +20,4 @@ function DescriptionTitle(props: Props) {
     )
 }
 
-export {DescriptionTitle}
+export {ProjectSubTitle}
