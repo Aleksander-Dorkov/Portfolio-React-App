@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {useSelector} from "react-redux";
 import {ReduxState} from "./configuration/redux/ReduxStore";
-import {createMuiTheme, Grid, Paper, Theme, ThemeProvider} from "@material-ui/core";
+import {createMuiTheme, Grid, Paper, Theme, ThemeProvider, Typography} from "@material-ui/core";
 import {ThemeBuilder} from "./views/theme/ThemeBuilder";
 import {Footer} from "./views/footer/Footer";
 import {BackEnd} from "./views/skills/sections/BackEnd";
@@ -12,6 +12,8 @@ import {ParallaxHeader} from "./views/parallax_images/ParallaxHeader";
 import {DARK_MUI_THEME, LIGHT_MUI_THEME} from "./views/theme/variables";
 import {SectionTitle} from "./views/section_title/SectionTitle";
 import {MovieDB} from "./views/projects/MovieDB";
+import {BugTracker} from "./views/projects/BugTracker";
+import {CornerDiv} from "./views/courner_div/CornerDiv";
 
 
 function App() {
@@ -42,6 +44,7 @@ function App() {
         <>
             <ThemeProvider theme={(currentTheme === undefined) ? defaultTHeme : currentTheme}>
                 <ThemeBuilder/>
+                <CornerDiv/>
                 <Paper>
                     <Grid container spacing={0}>
                         <Grid item xs={12} id={'header'}>
@@ -71,6 +74,7 @@ function App() {
                     <SectionTitle name={'Projects'} id={'projectSection'}/>
                     <Grid container={true} justify={'center'}>
                         <MovieDB/>
+                        <BugTracker/>
                     </Grid>
                     {/*about me*/}
                     <SectionTitle name={'About Me'} id={'aboutMeSection'}/>

@@ -1,9 +1,9 @@
-import React, {CSSProperties} from "react";
+import React, {CSSProperties, ReactNode} from "react";
 import {Typography} from "@material-ui/core";
 
 interface Props {
     value: string,
-    description?: string
+    description?: string | ReactNode
 }
 
 function ProjectSubTitle(props: Props) {

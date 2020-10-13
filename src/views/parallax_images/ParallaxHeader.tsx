@@ -26,7 +26,7 @@ function ParallaxHeader() {
                     <div style={nameStyles}>
                         <Typography variant={'h1'} style={{display: 'inline'}} className={'ml-3'}>Alexander</Typography>
                         <Typography variant={'h1'} style={{display: 'inline', color: '#00affb'}}> Dorkov</Typography>
-                        <Typography variant={'h3'} className={'ml-3'}>Software engineer</Typography>
+                        <Typography variant={'h3'} className={'ml-3'}>Software Engineer</Typography>
 
                         <IconButton color="inherit" aria-label="upload picture" component="span">
                             <a href="https://github.com/Aleksander-D-92" target={'_blank'} rel="noopener noreferrer"

@@ -43,7 +43,7 @@ function MovieDB() {
                                               description={' - Public API. Handles the rest of the operations.'}
                                 />
                             </ul>
-                            <ProjectSubTitle value={'Back End Dependencies'}/>
+                            <ProjectSubTitle value={'Back End Dependencies'} description={'Written in Java 11'}/>
                             <ul style={listStyles}>
                                 <ListItemCode svg={<MavenSvg/>} value={'Spring Security'}/>
                                 <ListItemCode svg={<MavenSvg/>} value={'JJWT'} description={'- JWT generator'}/>
@@ -68,7 +68,7 @@ function MovieDB() {
                                 <ListItemCode svg={<MavenSvg/>} value={'Lombok'}/>
                             </ul>
 
-                            <ProjectSubTitle value={'Front End Dependencies'}/>
+                            <ProjectSubTitle value={'Front End Dependencies'} description={'Written in Typescript 3'}/>
                             <ul style={listStyles}>
                                 <ListItemCode svg={<NpmSvg/>} value={'Typescript'}/>
                                 <ListItemCode svg={<NpmSvg/>} value={'React'}/>
@@ -93,12 +93,6 @@ function MovieDB() {
 
                         </CardContent>
                     </Card>
-                </Grid>
-                <Grid item={true} xs={12} md={12} lg={9}>
-                </Grid>
-            </Grid>
-            <Grid container={true} alignItems={'center'} justify={'center'}>
-                <Grid item={true} xs={12}>
                 </Grid>
             </Grid>
         </>

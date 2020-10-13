@@ -68,7 +68,7 @@ function GetLink(props: SvgProps) {
     return (
         <>
             <ScrollAnimation animateIn={'animate__rollIn'} style={styles}>
-                <IconButton color="inherit" aria-label="upload picture"
+                <IconButton color="inherit"
                             style={iconButtonStyles}
                             id={props.url}
                             onClick={(e: MouseEvent<HTMLButtonElement>) => handleRedirect(e)}>

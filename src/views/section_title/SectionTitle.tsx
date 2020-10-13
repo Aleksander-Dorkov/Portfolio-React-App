@@ -14,7 +14,8 @@ function SectionTitle(props: Props) {
                 <Typography variant={'h2'}
                             align={'center'}
                             style={{fontWeight: 'bold'}}
-                            className={'mt-5'}>{props.name}
+                            className={'mt-5'}>
+                    {props.name}
                 </Typography>
             </Grid>
         </>
