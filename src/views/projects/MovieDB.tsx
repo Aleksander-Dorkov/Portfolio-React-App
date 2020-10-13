@@ -1,6 +1,5 @@
 import React, {CSSProperties} from "react";
-import {Card, CardContent, Grid, Typography} from "@material-ui/core";
-import './css/ProjectStyles.css'
+import {Card, CardContent, Grid} from "@material-ui/core";
 import {MavenSvg} from "./svgs/MavenSvg";
 import {NpmSvg} from "./svgs/NpmSvg";
 import {ListItemCode} from "./list/ListItemCode";
@@ -8,6 +7,7 @@ import {ListItemLink} from "./list/ListItemLink";
 import {RdbmsSvg} from "./svgs/RdbmsSvg";
 import {ApiSvg} from "./svgs/ApiSvg";
 import {DescriptionTitle} from "./project_section/DescriptionTitle";
+import {ProjectTitle} from "./project_section/ProjectTitle";
 
 function MovieDB() {
     const imageUrl = 'https://i.ibb.co/hKVWzWP/Untitled.png';
@@ -23,17 +23,11 @@ function MovieDB() {
             <Grid container={true} justify={'center'} className={'mt-5'}>
                 <Grid item={true} xs={11} md={11} lg={11}>
                     <Card>
-                        <a href="https://online-movie-database.netlify.app/"
-                           target={'_blank'}
-                           className={'common-link'}
-                           rel="noopener noreferrer">
-                            <Typography variant={'h3'}
-                                        color={'textPrimary'}
-                                        style={{fontWeight: 'bold'}}
-                                        className={'mb-5'}>
-                                Online Movie Database (click)
-                            </Typography>
-                        </a>
+                        <ProjectTitle url={'https://online-movie-database.netlify.app/'}
+                                      name={'Online Movie Database (click)'}
+                                      githubBackEnd={'https://github.com/Aleksander-D-92/Movie-DB-GraphQL-API'}
+                                      githubFrontEnd={'https://github.com/Aleksander-D-92/Movie-DB-Front-End'}
+                                      deployedUrl={'https://online-movie-database.netlify.app/'}/>
                         <Grid item={true} xs={12} md={12} lg={9}>
                             <img src={imageUrl}
                                  alt={'not available'}
