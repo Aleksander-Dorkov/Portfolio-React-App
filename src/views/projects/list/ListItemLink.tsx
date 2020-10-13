@@ -25,7 +25,7 @@ function ListItemLink(props: Props) {
                         </Typography>
                     </a>
                     <Typography style={styles} variant={'subtitle1'} color={'textSecondary'}>
-                        {props.description}
+                        &nbsp;{props.description}
                     </Typography>
                 </li>
             </ScrollAnimation>

@@ -6,12 +6,12 @@ interface Props {
     description?: string
 }
 
-function ProjectSection(props: Props) {
+function DescriptionTitle(props: Props) {
     const styles = {fontWeight: 'bold', marginTop: '10px'} as CSSProperties
     return (
         <>
             <Typography variant={'h5'} style={styles}>
-                {props.value}:
+                {props.value}
             </Typography>
             <Typography variant={'subtitle1'} color={'textSecondary'} style={{fontWeight: 'bold'}}>
                 {props.description}
@@ -20,4 +20,4 @@ function ProjectSection(props: Props) {
     )
 }
 
-export {ProjectSection}
+export {DescriptionTitle}

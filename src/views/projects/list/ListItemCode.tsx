@@ -27,7 +27,7 @@ function ListItemCode(props: Props) {
                         {props.value}
                     </Typography>
                     <Typography style={descriptionStyles} variant={'subtitle1'} color={'textSecondary'}>
-                        {props.description}
+                        &nbsp;{props.description}
                     </Typography>
                 </li>
             </ScrollAnimation>

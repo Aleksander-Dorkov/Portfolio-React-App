@@ -7,11 +7,11 @@ import {ListItemCode} from "./list/ListItemCode";
 import {ListItemLink} from "./list/ListItemLink";
 import {RdbmsSvg} from "./svgs/RdbmsSvg";
 import {ApiSvg} from "./svgs/ApiSvg";
-import {ProjectSection} from "./ProrjectSection";
+import {DescriptionTitle} from "./project_section/DescriptionTitle";
 
 function MovieDB() {
     const imageUrl = 'https://i.ibb.co/hKVWzWP/Untitled.png';
-    const projectDescription=`
+    const projectDescription = `
         SPA WebApp that allows users to brows movies, tv shows, actors. Add favorites, submit comments
     `
     const listStyles = {
@@ -40,22 +40,21 @@ function MovieDB() {
                                  style={{width: '100%', height: 'auto'}}/>
                         </Grid>
                         <CardContent>
-                            <ProjectSection value={'Description'} description={projectDescription}/>
-
-                            <ProjectSection value={'APIs'}/>
+                            <DescriptionTitle value={'Description'} description={projectDescription}/>
+                            <DescriptionTitle value={'APIs'} description={'Uses 2 APIs'}/>
                             <ul style={listStyles}>
                                 <ListItemLink svg={<ApiSvg/>}
                                               href={'https://theatre-database.herokuapp.com/playground'}
                                               value={'Spring Boot GraphQL (click)'}
-                                              description={'- Written by me'}
+                                              description={'- Written by me. Handles User Register/Login/Logout, authentication. Submitting, editing, deleting comments. Adding/Removing to favorites'}
                                 />
                                 <ListItemLink svg={<ApiSvg/>}
                                               href={'https://developers.themoviedb.org/3/getting-started/introduction'}
                                               value={'The Movie Database REST API (click)'}
-                                              description={' - Public API'}
+                                              description={' - Public API. Handles the rest of the operations.'}
                                 />
                             </ul>
-                            <ProjectSection value={'Back End'}/>
+                            <DescriptionTitle value={'Back End Dependencies'}/>
                             <ul style={listStyles}>
                                 <ListItemCode svg={<MavenSvg/>} value={'Spring Security'}/>
                                 <ListItemCode svg={<MavenSvg/>} value={'JJWT'} description={'- JWT generator'}/>
@@ -80,7 +79,7 @@ function MovieDB() {
                                 <ListItemCode svg={<MavenSvg/>} value={'Lombok'}/>
                             </ul>
 
-                            <ProjectSection value={'Front End'}/>
+                            <DescriptionTitle value={'Front End Dependencies'}/>
                             <ul style={listStyles}>
                                 <ListItemCode svg={<NpmSvg/>} value={'Typescript'}/>
                                 <ListItemCode svg={<NpmSvg/>} value={'React'}/>
@@ -98,7 +97,7 @@ function MovieDB() {
                                               description={'- Enhanced table for Material UI'}/>
                             </ul>
 
-                            <ProjectSection value={'Database'}/>
+                            <DescriptionTitle value={'Database'}/>
                             <ul style={listStyles}>
                                 <ListItemCode svg={<RdbmsSvg/>} value={'PostgreSQL'}/>
                             </ul>
