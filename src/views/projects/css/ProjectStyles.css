@@ -20,22 +20,9 @@
     padding-left: 15px;
 }
 
-.technologies-used-list-svg {
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    position: relative;
-    top: 10px;
-}
 
-.technologies-used-list > li {
-    margin: 5px 0;
-}
 
-.list-svg {
-    position: relative;
-    top: 6px;
-}
+
 
 .code-text {
     color: #dd7979;

@@ -4,6 +4,7 @@ import './css/ProjectStyles.css'
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import {MavenSvg} from "./svgs/MavenSvg";
 import {NpmSvg} from "./svgs/NpmSvg";
+import {ListItem} from "./list/ListItem";
 
 function MovieDB() {
     const imageUrl = 'https://i.ibb.co/hKVWzWP/Untitled.png';
@@ -70,74 +71,63 @@ function MovieDB() {
                                         <PlayArrowIcon className={'list-svg'}/>
                                         <li>Back End</li>
                                         <ul className={'technologies-used-list'}>
-                                            <li>
-                                                <MavenSvg/>
-                                                <Typography className={'code-text'}>Spring Security</Typography>
-                                            </li>
-                                            <li>
-                                                <MavenSvg/>
-                                                <Typography className={'code-text'}>JJWT</Typography> JWT generator
-                                            </li>
+                                            <ListItem svg={<MavenSvg/>} value={'Spring Security'}/>
+                                            <ListItem svg={<MavenSvg/>} value={'JJWT'} description={' JWT generator'}/>
                                             <li>
                                                 <MavenSvg/>
                                                 <Typography className={'code-text'}>
                                                     GraphQL Java Kickstart
                                                 </Typography>
-                                                <ul className={'technologies-used-list'}>
-                                                    <li>
-                                                        <MavenSvg/>
-                                                        <a href="https://theatre-database.herokuapp.com/playground">
-                                                            <Typography className={'code-text'}>Playground (click)
-                                                            </Typography>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <MavenSvg/>
-                                                        <a href="https://theatre-database.herokuapp.com/graphiql">
-                                                            <Typography className={'code-text'}>Graph<i>i</i>QL (click)
-                                                            </Typography>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <MavenSvg/>
-                                                        <a href="https://theatre-database.herokuapp.com/voyager">
-                                                            <Typography className={'code-text'}>Voyager (click)
-                                                            </Typography>
-                                                        </a>
-                                                    </li>
-                                                </ul>
                                             </li>
-                                            <li><MavenSvg/><Typography className={'code-text'}>Spring Web</Typography></li>
-                                            <li><MavenSvg/><Typography className={'code-text'}>Spring Data JPA</Typography></li>
-                                            <li><MavenSvg/><Typography className={'code-text'}>Hibernate Validator</Typography>
-                                            </li>
-                                            <li><MavenSvg/><Typography className={'code-text'}>Spring Actuator</Typography></li>
-                                            <li><MavenSvg/><Typography className={'code-text'}>ModelMapper</Typography></li>
-                                            <li><MavenSvg/><Typography className={'code-text'}>Spring Devtools</Typography></li>
-                                            <li><MavenSvg/><Typography className={'code-text'}>Lombok</Typography></li>
+                                            <ul className={'technologies-used-list'}>
+                                                <li>
+                                                    <MavenSvg/>
+                                                    <a href="https://theatre-database.herokuapp.com/playground">
+                                                        <Typography className={'code-text'}>Playground (click)
+                                                        </Typography>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <MavenSvg/>
+                                                    <a href="https://theatre-database.herokuapp.com/graphiql">
+                                                        <Typography className={'code-text'}>Graph<i>i</i>QL (click)
+                                                        </Typography>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <MavenSvg/>
+                                                    <a href="https://theatre-database.herokuapp.com/voyager">
+                                                        <Typography className={'code-text'}>Voyager (click)
+                                                        </Typography>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <ListItem svg={<MavenSvg/>} value={'Spring Web'}/>
+                                            <ListItem svg={<MavenSvg/>} value={'Spring Data JPA'}/>
+                                            <ListItem svg={<MavenSvg/>} value={'Hibernate Validator'}/>
+                                            <ListItem svg={<MavenSvg/>} value={'Spring Actuator'}/>
+                                            <ListItem svg={<MavenSvg/>} value={'ModelMapper'}/>
+                                            <ListItem svg={<MavenSvg/>} value={'Spring Devtools'}/>
+                                            <ListItem svg={<MavenSvg/>} value={'Lombok'}/>
                                         </ul>
 
                                         <PlayArrowIcon className={'list-svg'}/>
                                         <li>Front End</li>
                                         <ul className={'technologies-used-list'}>
-                                            <li><NpmSvg/><Typography className={'code-text'}>Typescript</Typography></li>
-                                            <li><Typography className={'code-text'}>React</Typography></li>
-                                            <li><Typography className={'code-text'}>React Router Dom</Typography></li>
-                                            <li><Typography className={'code-text'}>React Redux</Typography></li>
-                                            <li><Typography className={'code-text'}>Apollo/client</Typography> For
-                                                GraphQL API calls
-                                            </li>
-                                            <li><Typography className={'code-text'}>Material UI</Typography> Component
-                                                UI library
-                                            </li>
-                                            <li><Typography className={'code-text'}>React Toastify</Typography></li>
-                                            <li><Typography className={'code-text'}>React Animate On Scroll</Typography>
-                                            </li>
-                                            <li><Typography className={'code-text'}>Axios</Typography></li>
-                                            <li><Typography className={'code-text'}>lodash</Typography></li>
-                                            <li><Typography className={'code-text'}>material-table</Typography> Enhanced
-                                                table for Material UI
-                                            </li>
+                                            <ListItem svg={<NpmSvg/>} value={'Typescript'}/>
+                                            <ListItem svg={<NpmSvg/>} value={'React'}/>
+                                            <ListItem svg={<NpmSvg/>} value={'React Router Dom'}/>
+                                            <ListItem svg={<NpmSvg/>} value={'React Redux'}/>
+                                            <ListItem svg={<NpmSvg/>} value={'Apollo/client'}
+                                                      description={' For GraphQL API calls'}/>
+                                            <ListItem svg={<NpmSvg/>} value={'Material UI'}
+                                                      description={' Component UI library'}/>
+                                            <ListItem svg={<NpmSvg/>} value={'React Toastify'}/>
+                                            <ListItem svg={<NpmSvg/>} value={'React Animate On Scroll'}/>
+                                            <ListItem svg={<NpmSvg/>} value={'Axios'}/>
+                                            <ListItem svg={<NpmSvg/>} value={'lodash'}/>
+                                            <ListItem svg={<NpmSvg/>} value={'material-table'}
+                                                      description={' Enhanced table for Material UI'}/>
                                         </ul>
 
                                         <PlayArrowIcon className={'list-svg'}/>
