@@ -1,11 +1,11 @@
 import React, {CSSProperties} from "react";
 import {Card, CardContent, Grid} from "@material-ui/core";
-import {ProjectTitle} from "./project_section/ProjectTitle";
-import {ProjectImage} from "./project_section/ProjectIamge";
-import {ProjectSubTitle} from "./project_section/ProjectSubTitle";
-import {ListItemLink} from "./list/ListItemLink";
+import {ProjectTitle} from "./project_commons/ProjectTitle";
+import {ProjectImage} from "./project_commons/ProjectIamge";
+import {ProjectSubTitle} from "./project_commons/ProjectSubTitle";
+import {ListItemLink} from "./project_list/ListItemLink";
 import {ApiSvg} from "./svgs/ApiSvg";
-import {ListItemCode} from "./list/ListItemCode";
+import {ListItemCode} from "./project_list/ListItemCode";
 import {RdbmsSvg} from "./svgs/RdbmsSvg";
 import {NpmSvg} from "./svgs/NpmSvg";
 import {MavenSvg} from "./svgs/MavenSvg";

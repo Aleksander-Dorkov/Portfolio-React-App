@@ -2,13 +2,13 @@ import React, {CSSProperties} from "react";
 import {Card, CardContent, Grid} from "@material-ui/core";
 import {MavenSvg} from "./svgs/MavenSvg";
 import {NpmSvg} from "./svgs/NpmSvg";
-import {ListItemCode} from "./list/ListItemCode";
-import {ListItemLink} from "./list/ListItemLink";
+import {ListItemCode} from "./project_list/ListItemCode";
+import {ListItemLink} from "./project_list/ListItemLink";
 import {RdbmsSvg} from "./svgs/RdbmsSvg";
 import {ApiSvg} from "./svgs/ApiSvg";
-import {ProjectSubTitle} from "./project_section/ProjectSubTitle";
-import {ProjectTitle} from "./project_section/ProjectTitle";
-import {ProjectImage} from "./project_section/ProjectIamge";
+import {ProjectSubTitle} from "./project_commons/ProjectSubTitle";
+import {ProjectTitle} from "./project_commons/ProjectTitle";
+import {ProjectImage} from "./project_commons/ProjectIamge";
 
 function MovieDB() {
     const projectDescription = `

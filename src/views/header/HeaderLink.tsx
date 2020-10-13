@@ -1,11 +1,11 @@
 import React from "react";
-import {Button, Typography} from "@material-ui/core";
+import {Button, Hidden, Typography} from "@material-ui/core";
 import {HashLink} from "react-router-hash-link";
 
 interface Props {
     svg: React.ReactNode
     linkName: string,
-    linkPath: string
+    linkPath: string,
 }
 
 function HeaderLink(props: Props) {

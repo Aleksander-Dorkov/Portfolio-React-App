@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {useSelector} from "react-redux";
 import {ReduxState} from "./configuration/redux/ReduxStore";
-import {createMuiTheme, Grid, Paper, Theme, ThemeProvider, Typography} from "@material-ui/core";
+import {createMuiTheme, Grid, Paper, Theme, ThemeProvider} from "@material-ui/core";
 import {ThemeBuilder} from "./views/theme/ThemeBuilder";
 import {Footer} from "./views/footer/Footer";
 import {BackEnd} from "./views/skills/sections/BackEnd";
