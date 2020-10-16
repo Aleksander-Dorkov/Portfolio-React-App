@@ -8,7 +8,7 @@ interface Props {
     linkPath: string,
 }
 
-function HeaderLink(props: Props) {
+function TopNavLink(props: Props) {
     return (
         <Button color={'inherit'}
                 className={'ml-5'}
@@ -24,4 +24,4 @@ function HeaderLink(props: Props) {
     )
 }
 
-export {HeaderLink}
+export {TopNavLink}

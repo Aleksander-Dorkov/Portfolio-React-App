@@ -16,7 +16,7 @@ function AboutMe() {
 
                     <Grid item={true} xs={8}>
                         {/*personal projects*/}
-                        <Typography variant={"h4"} className={'mt-2'} align={'center'}>
+                        <Typography variant={"h3"} className={'mt-2'} align={'center'} style={{fontWeight: 'bold'}}>
                             My developer journey
                         </Typography>
                         <AboutMeListTitle value={'Personal Projects'}
@@ -42,7 +42,7 @@ function AboutMe() {
 
                             <AboutMeListItem
                                 codeSvg={true}
-                                value={'Improved my code quality during the 2 months or so it took me to write my project (including this portfolio)'}/>
+                                value={'Improved my code quality during the month and a half or so it took me to write my personal projects (including this portfolio)'}/>
                             <AboutMeListItem
                                 codeSvg={true}
                                 value={'Spend a lot of time fixing incredibly stupid bugs :('}/>
@@ -72,7 +72,7 @@ function AboutMe() {
                         </ul>
 
                         {/*previous jobs*/}
-                        <Typography variant={"h4"} className={'mt-2'} align={'center'}>
+                        <Typography variant={"h3"} className={'mt-2'} align={'center'} style={{fontWeight: 'bold'}}>
                             Previous work experience
                         </Typography>
                         <AboutMeListTitle value={'GSMOne, Sales Consultant'}

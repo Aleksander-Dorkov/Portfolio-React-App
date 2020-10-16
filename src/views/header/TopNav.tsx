@@ -4,10 +4,11 @@ import HomeIcon from '@material-ui/icons/Home';
 import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
 import AccountTreeIcon from '@material-ui/icons/AccountTree';
 import InfoIcon from '@material-ui/icons/Info';
-import {HeaderLink} from "./HeaderLink";
+import {TopNavLink} from "./TopNavLink";
 import {MobileMenu} from "./MobileMenu";
+import ContactMailIcon from '@material-ui/icons/ContactMail';
 
-function Header() {
+function TopNav() {
     return (
         <>
             <span id={'topOfThePage'}></span>
@@ -15,18 +16,21 @@ function Header() {
                 <Toolbar>
                     <MobileMenu/>
                     <Hidden mdDown={true}>
-                        <HeaderLink svg={<HomeIcon/>}
+                        <TopNavLink svg={<HomeIcon/>}
                                     linkName={'Home'}
                                     linkPath={'#topOfThePage'}/>
-                        <HeaderLink svg={<LibraryBooksIcon/>}
+                        <TopNavLink svg={<LibraryBooksIcon/>}
                                     linkName={'Skills'}
                                     linkPath={'#skillSection'}/>
-                        <HeaderLink svg={<AccountTreeIcon/>}
+                        <TopNavLink svg={<AccountTreeIcon/>}
                                     linkName={'Projects'}
                                     linkPath={'#projectSection'}/>
-                        <HeaderLink svg={<InfoIcon/>}
+                        <TopNavLink svg={<InfoIcon/>}
                                     linkName={'About Me'}
                                     linkPath={'#aboutMeSection'}/>
+                        <TopNavLink svg={<ContactMailIcon/>}
+                                    linkName={'Contact Me'}
+                                    linkPath={'#contactMe'}/>
                     </Hidden>
                 </Toolbar>
             </AppBar>
@@ -34,4 +38,4 @@ function Header() {
     )
 }
 
-export {Header}
+export {TopNav}

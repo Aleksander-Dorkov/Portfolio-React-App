@@ -1,11 +1,12 @@
-import React, {CSSProperties, ReactNode, useState} from "react";
-import {Hidden, IconButton, Menu, MenuItem, Typography} from "@material-ui/core";
+import React, {CSSProperties, useState} from "react";
+import {Hidden, IconButton, Menu} from "@material-ui/core";
 import MenuIcon from '@material-ui/icons/Menu';
 import HomeIcon from '@material-ui/icons/Home';
 import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
 import InfoIcon from '@material-ui/icons/Info';
 import AccountTreeIcon from "@material-ui/icons/AccountTree";
-import {HashLink} from "react-router-hash-link";
+import ContactMailIcon from '@material-ui/icons/ContactMail';
+import {MobileMenuLink} from "./MobileMenuLink";
 
 
 function MobileMenu() {
@@ -35,25 +36,30 @@ function MobileMenu() {
                     open={Boolean(anchorEl)}
                     onClose={handleClose}
                 >
-                    <GetMenuItem handleClose={handleClose}
+                    <MobileMenuLink handleClose={handleClose}
                                  linkName={'Home'}
                                  linkPath={'#topOfThePage'}
                                  svg={<HomeIcon style={svgStyles}/>}/>
 
-                    <GetMenuItem handleClose={handleClose}
+                    <MobileMenuLink handleClose={handleClose}
                                  linkName={'Skills'}
                                  linkPath={'#skillSection'}
                                  svg={<LibraryBooksIcon style={svgStyles}/>}/>
 
-                    <GetMenuItem handleClose={handleClose}
+                    <MobileMenuLink handleClose={handleClose}
                                  linkName={'Projects'}
                                  linkPath={'#projectSection'}
                                  svg={<AccountTreeIcon style={svgStyles}/>}/>
 
-                    <GetMenuItem handleClose={handleClose}
+                    <MobileMenuLink handleClose={handleClose}
                                  linkName={'About Me'}
                                  linkPath={'#aboutMeSection'}
                                  svg={<InfoIcon style={svgStyles}/>}/>
+
+                    <MobileMenuLink handleClose={handleClose}
+                                 linkName={'Contact Me'}
+                                 linkPath={'#contactMe'}
+                                 svg={<ContactMailIcon style={svgStyles}/>}/>
 
                 </Menu>
             </div>
@@ -62,23 +68,3 @@ function MobileMenu() {
 }
 
 export {MobileMenu}
-
-interface Props {
-    handleClose: Function,
-    linkPath: string,
-    linkName: string,
-    svg: ReactNode
-}
-
-function GetMenuItem(props: Props) {
-    return (
-        <MenuItem onClick={() => props.handleClose()}
-                  component={HashLink}
-                  to={props.linkPath}>
-            <Typography variant={'h6'}
-                        className={'ml-1'}>
-                {props.svg} {props.linkName}
-            </Typography>
-        </MenuItem>
-    )
-}

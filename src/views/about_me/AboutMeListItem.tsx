@@ -20,7 +20,8 @@ function AboutMeListItem(props: Props) {
         <ScrollAnimation animateIn="animate__backInLeft">
             <li>
                 {props.codeSvg ? <CodeIcon style={styles}/> : <CheckBoxIcon style={styles}/>}
-                <Typography variant={'subtitle1'} style={{display: 'inline-block'}}>
+                <Typography variant={'subtitle1'}
+                            style={{display: 'inline-block'}}>
                     {props.value}
                 </Typography>
             </li>

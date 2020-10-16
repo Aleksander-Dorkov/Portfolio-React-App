@@ -9,10 +9,13 @@ interface Props {
 function AboutMeListTitle(props: Props) {
     return (
         <>
-            <Typography variant={'h5'} color={'textPrimary'}>
+            <Typography variant={'h5'}
+                        color={'textPrimary'}
+                        style={{textDecoration: 'underline'}}>
                 {props.value}
             </Typography>
-            <Typography variant={'subtitle1'} color={'textSecondary'}>
+            <Typography variant={'subtitle1'}
+                        color={'textSecondary'}>
                 {props.description}
             </Typography>
         </>

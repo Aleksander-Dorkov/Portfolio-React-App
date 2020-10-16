@@ -7,7 +7,7 @@ import {Footer} from "./views/footer/Footer";
 import {BackEnd} from "./views/skills/sections/BackEnd";
 import {FrontEnd} from "./views/skills/sections/FrontEnd";
 import {Databases} from "./views/skills/sections/Databases";
-import {Header} from "./views/header/Header";
+import {TopNav} from "./views/header/TopNav";
 import {ParallaxHeader} from "./views/parallax_images/ParallaxHeader";
 import {DARK_MUI_THEME, LIGHT_MUI_THEME} from "./views/theme/variables";
 import {SectionTitle} from "./views/section_title/SectionTitle";
@@ -16,6 +16,7 @@ import {BugTracker} from "./views/projects/BugTracker";
 import {CornerDiv} from "./views/courner_div/CornerDiv";
 import {AboutMe} from "./views/about_me/AboutMe";
 import {ParallaxFooter} from "./views/parallax_images/ParallaxFooter";
+import {ContactMe} from "./views/contact_me/ContactMe";
 
 
 function App() {
@@ -50,7 +51,7 @@ function App() {
                 <Paper>
                     <Grid container spacing={0}>
                         <Grid item xs={12} id={'header'}>
-                            <Header/>
+                            <TopNav/>
                         </Grid>
                     </Grid>
                     <Grid container={true} spacing={0} justify={'center'} style={{marginTop: '50px'}}>
@@ -86,6 +87,11 @@ function App() {
                     <SectionTitle name={'About Me'} id={'aboutMeSection'}/>
                     <Grid container={true} justify={'center'}>
                         <AboutMe/>
+                    </Grid>
+                    {/*contact me*/}
+                    <SectionTitle name={'Contact Me'} id={'contactMe'}/>
+                    <Grid container={true} justify={'center'}>
+                        <ContactMe/>
                     </Grid>
                     {/*footer*/}
                     <Grid container spacing={0}>
