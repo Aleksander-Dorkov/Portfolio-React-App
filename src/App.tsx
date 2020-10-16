@@ -15,6 +15,7 @@ import {MovieDB} from "./views/projects/MovieDB";
 import {BugTracker} from "./views/projects/BugTracker";
 import {CornerDiv} from "./views/courner_div/CornerDiv";
 import {AboutMe} from "./views/about_me/AboutMe";
+import {ParallaxFooter} from "./views/parallax_images/ParallaxFooter";
 
 
 function App() {
@@ -76,6 +77,10 @@ function App() {
                     <Grid container={true} justify={'center'}>
                         <MovieDB/>
                         <BugTracker/>
+                    </Grid>
+                    {/*footer parallax*/}
+                    <Grid container={true} spacing={0} justify={'center'} style={{marginTop: '50px'}}>
+                        <ParallaxFooter/>
                     </Grid>
                     {/*about me*/}
                     <SectionTitle name={'About Me'} id={'aboutMeSection'}/>
