@@ -57,7 +57,7 @@ function MobileMenu() {
                                  svg={<InfoIcon style={svgStyles}/>}/>
 
                     <MobileMenuLink handleClose={handleClose}
-                                 linkName={'Contact Me'}
+                                 linkName={'Contacts'}
                                  linkPath={'#contactMe'}
                                  svg={<ContactMailIcon style={svgStyles}/>}/>
 

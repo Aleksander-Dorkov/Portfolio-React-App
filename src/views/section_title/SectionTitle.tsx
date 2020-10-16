@@ -9,7 +9,7 @@ interface Props {
 function SectionTitle(props: Props) {
     return (
         <>
-            <span id={props.id}></span>
+            <span id={props.id} className={'mb-1'} style={{color: 'rgba(255, 0, 0, 0.0)'}}>s</span>
             <Grid item={true} xs={12}>
                 <Typography variant={'h2'}
                             align={'center'}

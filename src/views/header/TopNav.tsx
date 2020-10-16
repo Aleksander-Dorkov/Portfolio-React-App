@@ -29,7 +29,7 @@ function TopNav() {
                                     linkName={'About Me'}
                                     linkPath={'#aboutMeSection'}/>
                         <TopNavLink svg={<ContactMailIcon/>}
-                                    linkName={'Contact Me'}
+                                    linkName={'Contacts'}
                                     linkPath={'#contactMe'}/>
                     </Hidden>
                 </Toolbar>

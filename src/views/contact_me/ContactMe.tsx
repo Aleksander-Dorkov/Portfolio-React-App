@@ -1,6 +1,8 @@
 import React from "react";
 import {Card, CardContent, Grid} from "@material-ui/core";
 import {ContactSectionTitle} from "./ContactSectionTitle";
+import {ContactMeListItem} from "./ContactMeListItem";
+import {ContactMeForm} from "./ContactMeForm";
 
 
 function ContactMe() {
@@ -9,9 +11,19 @@ function ContactMe() {
             <Card elevation={10}>
                 <CardContent>
                     <ContactSectionTitle title={'Contact me'}
-                                         subtitle={'My contact information listed below'}/>
+                                         subtitle={'My contact information is listed below'}/>
+                    <ul style={{listStyleType: 'none', paddingLeft: '20px'}}>
+                        <ContactMeListItem title={'Phone Number'}
+                                           description={'0878375167'}
+                                           phoneSvg={true}/>
+                        <ContactMeListItem title={'Email Address'}
+                                           description={'aleksander.dorkov@gmail.com'}
+                                           link={'mailto: aleksander.dorkov@gmail.com'}
+                                           mailSvg={true}/>
+                    </ul>
                     <ContactSectionTitle title={'Feedback'}
                                          subtitle={'Please feel free to send me feedback how i can improve my CV, Portfolio etc...'}/>
+                    <ContactMeForm/>
                 </CardContent>
             </Card>
         </Grid>

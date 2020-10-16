@@ -19,24 +19,21 @@ function AboutMe() {
                         {/*personal projects*/}
                         <AboutMeSectionTitle title={'My developers journey'}/>
                         <AboutMeListTitle value={'Personal Projects'}
-                                          description={'Projects i did with the purpose of becoming a better developer.'}/>
+                                          description={'Projects i did with the purpose of becoming a better developer'}/>
                         <ul style={{listStyleType: 'none'}}>
                             <AboutMeListItem
                                 codeSvg={true}
-                                value={'Researched witch technologies are in the highest demand in the job marked and picked them for my projects'}/>
-                            <AboutMeListItem
-                                codeSvg={true}
-                                value={'Fallowed recommended best developer practises such as '}/>
+                                value={'Fallowed recommended best developer practises such as'}/>
                             <ul style={{listStyleType: 'none'}}>
                                 <AboutMeListItem
                                     codeSvg={true}
                                     value={'DRY - Don\'t Repeat Yourself'}/>
                                 <AboutMeListItem
                                     codeSvg={true}
-                                    value={'S.O.L.I.D principles'}/>
+                                    value={'KISS - Keep It Simple Stupid'}/>
                                 <AboutMeListItem
                                     codeSvg={true}
-                                    value={'KISS Keep It Simple Stupid'}/>
+                                    value={'S.O.L.I.D principles'}/>
                             </ul>
 
                             <AboutMeListItem
@@ -44,12 +41,15 @@ function AboutMe() {
                                 value={'Improved my code quality during the month and a half or so it took me to write my personal projects (including this portfolio)'}/>
                             <AboutMeListItem
                                 codeSvg={true}
-                                value={'Spend a lot of time fixing incredibly stupid bugs :('}/>
+                                value={'Spend a lot of time fixing the dumbest bugs ever :('}/>
+                            <AboutMeListItem
+                                codeSvg={true}
+                                value={'Researched witch technologies are in the highest demand in the job marked and picked them for my projects'}/>
                         </ul>
 
                         {/*SoftUni*/}
-                        <AboutMeListTitle value={'SoftUni Homeworks and Videos'}
-                                          description={'I never went to SoftUni in person, just used the material they provide for free like videos and homeworks'}/>
+                        <AboutMeListTitle value={'SoftUni Free Courses'}
+                                          description={'I never went to SoftUni in person, just used the materials they provide for free like videos and homeworks'}/>
                         <ul style={{listStyleType: 'none'}}>
                             <AboutMeListItem
                                 codeSvg={true}
@@ -67,17 +67,17 @@ function AboutMe() {
                                 value={'Read other peoples code to see if there are any different solutions to the problem'}/>
                             <AboutMeListItem
                                 codeSvg={true}
-                                value={'Passed all of the courses of the "Java Web Developer module"'}/>
+                                value={'Passed through all of the courses of the "Java Web Developer module"'}/>
                         </ul>
 
                         {/*previous jobs*/}
                         <AboutMeSectionTitle title={'Previous work experience'}/>
                         <AboutMeListTitle value={'GSMOne, Sales Consultant'}
-                                          description={'My responsibilities are listed below. Unfortunately the firm bankrupted during the corona virus outbreak due to the lack of customers.'}/>
+                                          description={'My responsibilities are listed below. Unfortunately the firm bankrupted during the corona virus outbreak due to the lack of customers'}/>
                         <ul style={{listStyleType: 'none'}}>
                             <AboutMeListItem
                                 checkBoxSvg={true}
-                                value={'Recommended and select products for customers based on their individual needs'}/>
+                                value={'Recommended and selected products for customers based on their individual needs'}/>
                             <AboutMeListItem
                                 checkBoxSvg={true}
                                 value={'Maintained a working knowledge of the company\'s various products and services'}/>
@@ -86,11 +86,14 @@ function AboutMe() {
                                 value={'Completed administrative tasks, such as processing and recording sales, as needed'}/>
                             <AboutMeListItem
                                 checkBoxSvg={true}
+                                value={'Assisted fellow associates as needed throughout the store'}/>
+                            <AboutMeListItem
+                                checkBoxSvg={true}
                                 value={'Described products and explain their benefits and uses to potential customers'}/>
                         </ul>
 
                         <AboutMeListTitle value={'Fantastico, Sales Consultant'}
-                                          description={'My responsibilities are listed below.'}/>
+                                          description={'My responsibilities are listed below'}/>
                         <ul style={{listStyleType: 'none'}}>
                             <AboutMeListItem
                                 checkBoxSvg={true}
@@ -106,7 +109,7 @@ function AboutMe() {
                         {/*education*/}
                         <AboutMeSectionTitle title={'Education'}/>
                         <AboutMeListTitle value={'Technical University of Sofia'}
-                                         />
+                        />
                         <ul style={{listStyleType: 'none'}}>
                             <AboutMeListItem
                                 educationSvg={true}
