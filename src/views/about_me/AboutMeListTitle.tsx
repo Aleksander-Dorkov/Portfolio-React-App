@@ -14,10 +14,12 @@ function AboutMeListTitle(props: Props) {
                         style={{textDecoration: 'underline'}}>
                 {props.value}
             </Typography>
+            {props.description !== undefined &&
             <Typography variant={'subtitle1'}
                         color={'textSecondary'}>
                 {props.description}
-            </Typography>
+            </Typography>}
+
         </>
     )
 }

@@ -89,7 +89,7 @@ function App() {
                         <AboutMe/>
                     </Grid>
                     {/*contact me*/}
-                    <SectionTitle name={'Contact Me'} id={'contactMe'}/>
+                    <SectionTitle name={'Contact and Feedback'} id={'contactMe'}/>
                     <Grid container={true} justify={'center'}>
                         <ContactMe/>
                     </Grid>

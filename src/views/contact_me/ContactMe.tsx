@@ -1,19 +1,18 @@
 import React from "react";
-import {Card, Grid, Typography} from "@material-ui/core";
+import {Card, CardContent, Grid} from "@material-ui/core";
+import {ContactSectionTitle} from "./ContactSectionTitle";
 
 
 function ContactMe() {
     return (
         <Grid item={true} xs={11}>
             <Card elevation={10}>
-                <Typography variant={'h3'} style={{fontWeight: 'bold'}}>
-                    Contact me
-                </Typography>
-                <Typography variant={'subtitle1'}
-                            color={'textSecondary'}
-                            style={{fontWeight: 'bold'}}>
-                    Please feel free to send me feedback how i can improve my CV, Portfolio etc...
-                </Typography>
+                <CardContent>
+                    <ContactSectionTitle title={'Contact me'}
+                                         subtitle={'My contact information listed below'}/>
+                    <ContactSectionTitle title={'Feedback'}
+                                         subtitle={'Please feel free to send me feedback how i can improve my CV, Portfolio etc...'}/>
+                </CardContent>
             </Card>
         </Grid>
     )

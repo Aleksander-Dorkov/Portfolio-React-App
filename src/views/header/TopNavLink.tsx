@@ -11,7 +11,7 @@ interface Props {
 function TopNavLink(props: Props) {
     return (
         <Button color={'inherit'}
-                className={'ml-5'}
+                className={'ml-4'}
                 component={HashLink}
                 to={props.linkPath}
                 smooth={true}>

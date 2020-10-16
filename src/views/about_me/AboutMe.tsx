@@ -1,8 +1,9 @@
 import React from "react";
-import {Card, Grid, Typography} from "@material-ui/core";
+import {Card, Grid} from "@material-ui/core";
 import {AboutMeListTitle} from "./AboutMeListTitle";
 import {AboutMeListItem} from "./AboutMeListItem";
 import {AboutMePicture} from "./AboutMePicture";
+import {AboutMeSectionTitle} from "./AboutMeSectionTitle";
 
 
 function AboutMe() {
@@ -16,9 +17,7 @@ function AboutMe() {
 
                     <Grid item={true} xs={8}>
                         {/*personal projects*/}
-                        <Typography variant={"h3"} className={'mt-2'} align={'center'} style={{fontWeight: 'bold'}}>
-                            My developer journey
-                        </Typography>
+                        <AboutMeSectionTitle title={'My developers journey'}/>
                         <AboutMeListTitle value={'Personal Projects'}
                                           description={'Projects i did with the purpose of becoming a better developer.'}/>
                         <ul style={{listStyleType: 'none'}}>
@@ -72,23 +71,21 @@ function AboutMe() {
                         </ul>
 
                         {/*previous jobs*/}
-                        <Typography variant={"h3"} className={'mt-2'} align={'center'} style={{fontWeight: 'bold'}}>
-                            Previous work experience
-                        </Typography>
+                        <AboutMeSectionTitle title={'Previous work experience'}/>
                         <AboutMeListTitle value={'GSMOne, Sales Consultant'}
                                           description={'My responsibilities are listed below. Unfortunately the firm bankrupted during the corona virus outbreak due to the lack of customers.'}/>
                         <ul style={{listStyleType: 'none'}}>
                             <AboutMeListItem
-                                codeSvg={false}
+                                checkBoxSvg={true}
                                 value={'Recommended and select products for customers based on their individual needs'}/>
                             <AboutMeListItem
-                                codeSvg={false}
+                                checkBoxSvg={true}
                                 value={'Maintained a working knowledge of the company\'s various products and services'}/>
                             <AboutMeListItem
-                                codeSvg={false}
+                                checkBoxSvg={true}
                                 value={'Completed administrative tasks, such as processing and recording sales, as needed'}/>
                             <AboutMeListItem
-                                codeSvg={false}
+                                checkBoxSvg={true}
                                 value={'Described products and explain their benefits and uses to potential customers'}/>
                         </ul>
 
@@ -96,14 +93,31 @@ function AboutMe() {
                                           description={'My responsibilities are listed below.'}/>
                         <ul style={{listStyleType: 'none'}}>
                             <AboutMeListItem
-                                codeSvg={false}
+                                checkBoxSvg={true}
                                 value={'Kept my area stocked, clean, and safe'}/>
                             <AboutMeListItem
-                                codeSvg={false}
+                                checkBoxSvg={true}
                                 value={'Assisted fellow associates as needed throughout the store'}/>
                             <AboutMeListItem
-                                codeSvg={false}
+                                checkBoxSvg={true}
                                 value={'Helped customers find the products they are looking for'}/>
+                        </ul>
+
+                        {/*education*/}
+                        <AboutMeSectionTitle title={'Education'}/>
+                        <AboutMeListTitle value={'Technical University of Sofia'}
+                                         />
+                        <ul style={{listStyleType: 'none'}}>
+                            <AboutMeListItem
+                                educationSvg={true}
+                                value={'Mechanical Engineering Bachelors Degree'}/>
+                        </ul>
+                        <AboutMeListTitle value={'Lomonosov High School'}
+                        />
+                        <ul style={{listStyleType: 'none'}}>
+                            <AboutMeListItem
+                                educationSvg={true}
+                                value={'Audio System and Cinema Diploma'}/>
                         </ul>
                     </Grid>
 
