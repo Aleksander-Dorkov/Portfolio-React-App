@@ -20,9 +20,9 @@ function ParallaxHeader() {
     return (
         <Grid container={true} spacing={0} justify={'center'} style={{marginTop: '10px'}}>
             <Parallax bgImage={image1}
-                      strength={800}
+                      strength={1000}
                       style={{width: '100%'}}>
-                <div style={{height: 1200}}>
+                <div style={{height: 900}}>
                     <div style={nameStyles}>
                         <Typography variant={'h1'} style={{display: 'inline'}} className={'ml-3'}>Alexander</Typography>
                         <Typography variant={'h1'} style={{display: 'inline', color: '#00affb'}}> Dorkov</Typography>

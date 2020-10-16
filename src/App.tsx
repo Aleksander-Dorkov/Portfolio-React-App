@@ -14,6 +14,7 @@ import {SectionTitle} from "./views/section_title/SectionTitle";
 import {MovieDB} from "./views/projects/MovieDB";
 import {BugTracker} from "./views/projects/BugTracker";
 import {CornerDiv} from "./views/courner_div/CornerDiv";
+import {AboutMe} from "./views/about_me/AboutMe";
 
 
 function App() {
@@ -79,7 +80,7 @@ function App() {
                     {/*about me*/}
                     <SectionTitle name={'About Me'} id={'aboutMeSection'}/>
                     <Grid container={true} justify={'center'}>
-
+                        <AboutMe/>
                     </Grid>
                     {/*footer*/}
                     <Grid container spacing={0}>

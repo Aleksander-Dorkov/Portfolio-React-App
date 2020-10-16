@@ -10,6 +10,14 @@ function FrontEnd() {
             <SkillSectionTitle value={'Front End'}/>
             <Grid container={true} justify={'center'} alignItems={'center'}>
                 <Skill
+                    svgUrl={'https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg'}
+                    tooltip={'HTML'}
+                    animation={'animate__backInRight'}/>
+                <Skill
+                    svgUrl={'https://www.iconninja.com/files/64/358/407/css3-icon.svg'}
+                    tooltip={'CSS'}
+                    animation={'animate__backInRight'}/>
+                <Skill
                     svgUrl={'https://cdn.worldvectorlogo.com/logos/javascript.svg'}
                     tooltip={'JavaScript'}
                     animation={'animate__backInRight'}/>

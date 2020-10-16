@@ -6,7 +6,8 @@ import ScrollAnimation from "react-animate-on-scroll";
 interface Props {
     svgUrl: string,
     tooltip: string,
-    animation: string
+    animation: string,
+    width?: number
 }
 
 function Skill(props: Props) {
@@ -21,7 +22,7 @@ function Skill(props: Props) {
                         <img src={props.svgUrl}
                              className={'mt-2'}
                              alt={'not available'}
-                             width={150}
+                             width={(props.width === undefined) ? 150 : props.width}
                              height={150}/>
                     </Grid>
                     <Typography variant="body1"

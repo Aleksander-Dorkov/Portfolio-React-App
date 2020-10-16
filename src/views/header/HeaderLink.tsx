@@ -1,5 +1,5 @@
 import React from "react";
-import {Button, Hidden, Typography} from "@material-ui/core";
+import {Button, Typography} from "@material-ui/core";
 import {HashLink} from "react-router-hash-link";
 
 interface Props {

@@ -38,6 +38,11 @@ function BackEnd() {
                     svgUrl={'https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg'}
                     tooltip={'Spring GraphQL'}
                     animation={'animate__backInLeft'}/>
+                <Skill
+                    svgUrl={'https://miro.medium.com/max/692/0*zT7_k4NJrPynFzyV.png'}
+                    tooltip={'JUnit and Mockito'}
+                    width={280}
+                    animation={'animate__backInLeft'}/>
             </Grid>
         </>
     )
