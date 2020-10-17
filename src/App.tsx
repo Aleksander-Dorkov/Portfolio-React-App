@@ -5,7 +5,6 @@ import {createMuiTheme, Grid, Paper, Theme, ThemeProvider} from "@material-ui/co
 import {ThemeBuilder} from "./views/theme/ThemeBuilder";
 import {TopNav} from "./views/header/TopNav";
 import {DARK_MUI_THEME, LIGHT_MUI_THEME} from "./views/theme/variables";
-import {CornerDiv} from "./views/courner_div/CornerDiv";
 import {WebAppRoutes} from "./configuration/router/WebAppRoutes";
 
 
@@ -37,7 +36,6 @@ function App() {
         <>
             <ThemeProvider theme={(currentTheme === undefined) ? defaultTHeme : currentTheme}>
                 <ThemeBuilder/>
-                <CornerDiv/>
                 <Paper>
                     <Grid container spacing={0}>
                         <Grid item xs={12} id={'header'}>

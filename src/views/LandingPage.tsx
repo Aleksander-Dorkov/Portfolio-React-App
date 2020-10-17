@@ -11,11 +11,13 @@ import {ParallaxFooter} from "./parallax_images/ParallaxFooter";
 import {AboutMe} from "./about_me/AboutMe";
 import {ContactMe} from "./contact_me/ContactMe";
 import {Footer} from "./footer/Footer";
+import {CornerDiv} from "./courner_div/CornerDiv";
 
 
 function LandingPage() {
     return (
         <>
+            <CornerDiv/>
             <Grid container={true} spacing={0} justify={'center'} style={{marginTop: '50px'}}>
                 <ParallaxHeader/>
             </Grid>

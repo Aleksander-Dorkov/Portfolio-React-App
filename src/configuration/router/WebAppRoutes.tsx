@@ -1,6 +1,7 @@
 import React from "react";
 import {Route, Switch} from "react-router-dom";
 import {LandingPage} from "../../views/LandingPage";
+import {ResumePDF} from "../../views/resume/ResumePDF";
 
 function WebAppRoutes() {
     return (
@@ -10,7 +11,7 @@ function WebAppRoutes() {
                     <LandingPage/>
                 </Route>
                 <Route exact={true} path="/resume">
-                    <h1>nekvo resume</h1>
+                    <ResumePDF/>
                 </Route>
                 <Route exact={true} path="*">
                     <LandingPage/>
