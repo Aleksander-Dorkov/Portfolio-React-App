@@ -10,9 +10,8 @@ import {WebAppRoutes} from "./configuration/router/WebAppRoutes";
 
 function App() {
     const darkTheme = useSelector((state: ReduxState) => state.darkTheme);
-    const [currentTheme, setCurrentTheme] = useState<Theme>();
-
     const defaultTHeme = createMuiTheme(DARK_MUI_THEME);
+    const [currentTheme, setCurrentTheme] = useState<Theme>(defaultTHeme);
     useEffect(() => {
         if (darkTheme) {
             setCurrentTheme(createMuiTheme(DARK_MUI_THEME));

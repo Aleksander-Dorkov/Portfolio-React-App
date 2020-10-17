@@ -1,4 +1,4 @@
-import React, {CSSProperties, ReactNode} from "react";
+import React, {CSSProperties} from "react";
 import EmailIcon from '@material-ui/icons/Email';
 import PhoneAndroidIcon from '@material-ui/icons/PhoneAndroid';
 import FeaturedPlayListIcon from '@material-ui/icons/FeaturedPlayList';

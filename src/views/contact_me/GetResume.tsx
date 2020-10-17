@@ -1,7 +1,5 @@
-import React, {CSSProperties, useEffect, useState} from "react";
+import React, {CSSProperties} from "react";
 import ScrollAnimation from "react-animate-on-scroll";
-import EmailIcon from "@material-ui/icons/Email";
-import PhoneAndroidIcon from "@material-ui/icons/PhoneAndroid";
 import FeaturedPlayListIcon from "@material-ui/icons/FeaturedPlayList";
 import {Typography} from "@material-ui/core";
 import {Link} from "react-router-dom";
