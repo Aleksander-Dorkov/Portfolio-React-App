@@ -14,7 +14,7 @@ function MobileMenuLink(props: Props) {
         <>
             <MenuItem onClick={() => props.handleClose()}
                       component={HashLink}
-                      to={props.linkPath}>
+                      to={`/${props.linkPath}`}>
                 <Typography variant={'h6'}
                             className={'ml-1'}>
                     {props.svg} {props.linkName}

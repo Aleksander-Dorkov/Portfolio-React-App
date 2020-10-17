@@ -22,7 +22,7 @@ function ContactMe() {
                                            mailSvg={true}/>
                     </ul>
                     <ContactSectionTitle title={'Feedback'}
-                                         subtitle={'Please feel free to send me feedback how i can improve my CV, Portfolio etc...'}/>
+                                         subtitle={'Please feel free to send me feedback how I can improve my Resume, Portfolio etc...'}/>
                     <ContactMeForm/>
                 </CardContent>
             </Card>

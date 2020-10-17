@@ -4,6 +4,7 @@ import {Parallax} from "react-parallax";
 import GetAppIcon from '@material-ui/icons/GetApp';
 import './ParallaxHeader.css'
 import GitHubIcon from '@material-ui/icons/GitHub';
+import {Link} from "react-router-dom";
 
 function ParallaxHeader() {
     const nameStyles = {
@@ -29,6 +30,7 @@ function ParallaxHeader() {
                         <Typography variant={'h3'} className={'ml-3'}>Software Engineer</Typography>
 
                         <IconButton color="inherit" aria-label="upload picture" component="span">
+                            <Link to={'/resume'}>Get My resume</Link>
                             <a href="https://github.com/Aleksander-D-92" target={'_blank'} rel="noopener noreferrer"
                                className={'parallax-link'}><GitHubIcon fontSize={'large'}/>
                             </a>

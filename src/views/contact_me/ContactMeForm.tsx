@@ -1,6 +1,7 @@
 import React, {BaseSyntheticEvent, useState} from "react";
 import {Button, CircularProgress, Grid, TextField} from "@material-ui/core";
 import {useForm} from "react-hook-form";
+import emailjs from 'emailjs-com';
 
 
 function ContactMeForm() {
@@ -14,10 +15,23 @@ function ContactMeForm() {
     const [loading, setLoading] = useState<boolean>(false);
 
     function onSubmit(data: any, event: BaseSyntheticEvent | undefined) {
-        if(event !==undefined) {
-            event.target.reset();
+
+        setLoading(true);
+        if (event === undefined) {
+            setLoading(false);
+            return;
         }
-        console.log(data);
+
+        emailjs.sendForm('gmail', 'template_djoyjve', event.target, 'user_6EWwJ2wkUdvLuWsqq33Sr')
+            .then((result: any) => {
+                setLoading(false);
+                event.target.reset();
+                console.log(result.text);
+            }, (error: any) => {
+                setLoading(false);
+                event.target.reset();
+                console.log(error.text);
+            });
     }
 
     return (
@@ -29,7 +43,7 @@ function ContactMeForm() {
                                fullWidth={true}
                                label="Name"
                                name={'name'}
-                               className={'mb-3'}
+                               className={'mb-3 mt-2'}
                                placeholder={'at least 4 chars long'}
                                inputRef={register({
                                    required: true,

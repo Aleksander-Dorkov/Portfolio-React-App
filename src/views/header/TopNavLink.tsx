@@ -13,7 +13,7 @@ function TopNavLink(props: Props) {
         <Button color={'inherit'}
                 className={'ml-4'}
                 component={HashLink}
-                to={props.linkPath}
+                to={`/${props.linkPath}`}
                 smooth={true}>
             {props.svg}
             <Typography variant={'h6'}
