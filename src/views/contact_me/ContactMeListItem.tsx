@@ -39,7 +39,9 @@ function ContactMeListItem(props: Props) {
                             {props.description}
                         </Typography>
                         :
-                        <a href={props.link}>
+                        <a href={props.link}
+                           target={'_blank'}
+                           rel="noopener noreferrer">
                             <Typography variant={'h6'}
                                         color={'textPrimary'}
                                         style={{display: 'inline-block'}}>

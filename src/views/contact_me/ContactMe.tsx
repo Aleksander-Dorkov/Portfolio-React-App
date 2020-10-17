@@ -24,7 +24,7 @@ function ContactMe() {
                         <ContactMeListItem title={'Resume'}
                                            description={'Click to read my resume online'}
                                            link={PDF as string}
-                                           mailSvg={true}/>
+                                           resumeSvg={true}/>
 
                     </ul>
                     <ContactSectionTitle title={'Feedback'}

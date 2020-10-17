@@ -33,6 +33,7 @@
 </head>
 <!--    wake up heroku apps-->
 <script>
+    localStorage.setItem('theme', 'DARK_THEME');
     fetch('https://theatre-database.herokuapp.com/heroku/start', {method: 'post'}).then(() => {
         console.log('heroku woke up');
     });
