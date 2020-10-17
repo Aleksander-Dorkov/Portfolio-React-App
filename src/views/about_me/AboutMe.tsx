@@ -41,10 +41,10 @@ function AboutMe() {
                                 value={'Improved my code quality during the month and a half or so it took me to write my personal projects (including this portfolio)'}/>
                             <AboutMeListItem
                                 codeSvg={true}
-                                value={'Spend a lot of time fixing the dumbest bugs ever :('}/>
+                                value={'Researched witch technologies are in the highest demand in the job marked and picked them for my projects'}/>
                             <AboutMeListItem
                                 codeSvg={true}
-                                value={'Researched witch technologies are in the highest demand in the job marked and picked them for my projects'}/>
+                                value={'Spend a lot of time fixing the dumbest bugs ever :('}/>
                         </ul>
 
                         {/*SoftUni*/}
@@ -64,7 +64,7 @@ function AboutMe() {
                             </ul>
                             <AboutMeListItem
                                 codeSvg={true}
-                                value={'Read other peoples code to see if there are any different solutions to the problem'}/>
+                                value={'Inspected other peoples code to see if there are any different solutions to the problem'}/>
                             <AboutMeListItem
                                 codeSvg={true}
                                 value={'Passed through all of the courses of the "Java Web Developer module"'}/>

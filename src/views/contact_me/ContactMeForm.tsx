@@ -1,15 +1,80 @@
-import React from "react";
-import {TextField} from "@material-ui/core";
+import React, {BaseSyntheticEvent, useState} from "react";
+import {Button, CircularProgress, Grid, TextField} from "@material-ui/core";
+import {useForm} from "react-hook-form";
 
 
 function ContactMeForm() {
+    const {register, handleSubmit, errors} = useForm({
+        defaultValues: {
+            email: '',
+            name: '',
+            message: ''
+        }
+    });
+    const [loading, setLoading] = useState<boolean>(false);
+
+    function onSubmit(data: any, event: BaseSyntheticEvent | undefined) {
+        if(event !==undefined) {
+            event.target.reset();
+        }
+        console.log(data);
+    }
+
     return (
         <>
-            <form>
-                <TextField id="standard-basic" label="Standard"/>
-                <TextField id="standard-basic" label="Standard"/>
-                <TextField id="standard-basic" label="Standard" multiline={true} rows={5}/>
-            </form>
+            <Grid item={true} xs={12} md={5}>
+                <form
+                    onSubmit={handleSubmit((data: any, event: BaseSyntheticEvent | undefined) => onSubmit(data, event))}>
+                    <TextField required={true}
+                               fullWidth={true}
+                               label="Name"
+                               name={'name'}
+                               className={'mb-3'}
+                               placeholder={'at least 4 chars long'}
+                               inputRef={register({
+                                   required: true,
+                                   minLength: 4
+                               })}
+                               error={Boolean(errors.name)}
+                               helperText={errors.name ? 'Must be least 4 chars long' : ''}
+                    />
+                    <TextField fullWidth={true}
+                               required={true}
+                               label="E-mail"
+                               name={'email'}
+                               className={'mb-3'}
+                               placeholder={'provide some valid email'}
+                               inputRef={register({
+                                   required: true,
+                                   pattern: new RegExp('^[^@]+@[^@]+\\.[^@]+$')
+                               })}
+                               error={Boolean(errors.email)}
+                               helperText={errors.email ? 'Must have only one @, at least one character before the @, at least one character before the DOT and at least one after it:' : ''}
+                    />
+                    <TextField required={true}
+                               fullWidth={true}
+                               label="Message"
+                               name={'message'}
+                               className={'mb-3'}
+                               placeholder={'your feedback, min 10 chars'}
+                               multiline={true}
+                               rows={5}
+                               inputRef={register({
+                                   required: true,
+                                   minLength: 10
+                               })}
+                               error={Boolean(errors.message)}
+                               helperText={errors.message ? 'Must be least 10 chars long' : ''}
+                    />
+                    <Button variant="contained"
+                            type={'submit'}
+                            disabled={loading}
+                            color="primary">
+                        Send Feedback
+                        {loading && <CircularProgress size={20}/>}
+                    </Button>
+                </form>
+            </Grid>
         </>
     )
 }
