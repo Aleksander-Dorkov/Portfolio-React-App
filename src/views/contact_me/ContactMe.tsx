@@ -3,8 +3,8 @@ import {Card, CardContent, Grid} from "@material-ui/core";
 import {ContactSectionTitle} from "./ContactSectionTitle";
 import {ContactMeListItem} from "./ContactMeListItem";
 import {ContactMeForm} from "./ContactMeForm";
-import {GetResume} from "./GetResume";
-
+// @ts-ignore
+import PDF from '../resume/Aleksander-Dorkov-Resume.pdf';
 
 function ContactMe() {
     return (
@@ -21,7 +21,10 @@ function ContactMe() {
                                            description={'Click to send me an email'}
                                            link={'mailto: aleksander.dorkov@gmail.com'}
                                            mailSvg={true}/>
-                        <GetResume/>
+                        <ContactMeListItem title={'Resume'}
+                                           description={'Click to read my resume online'}
+                                           link={PDF as string}
+                                           mailSvg={true}/>
 
                     </ul>
                     <ContactSectionTitle title={'Feedback'}

@@ -1,10 +1,11 @@
 import React, {CSSProperties} from "react";
-import {Grid, IconButton, Typography} from "@material-ui/core";
+import {Grid, Typography} from "@material-ui/core";
 import {Parallax} from "react-parallax";
 import GetAppIcon from '@material-ui/icons/GetApp';
 import './ParallaxHeader.css'
 import GitHubIcon from '@material-ui/icons/GitHub';
-import {Link} from "react-router-dom";
+// @ts-ignore
+import PDF from '../resume/Aleksander-Dorkov-Resume.pdf';
 
 function ParallaxHeader() {
     const nameStyles = {
@@ -33,17 +34,18 @@ function ParallaxHeader() {
                         <a href="https://github.com/Aleksander-D-92"
                            target={'_blank'}
                            rel="noopener noreferrer"
-                           className={'parallax-link'}>
+                           className={'parallax-link ml-3'}>
                             <GitHubIcon fontSize={'large'} className={'parallax-svg'}/>
                             <Typography variant={'h5'} style={{display: 'inline'}}>Github</Typography>
                         </a>
 
-
-                        <Link to={'/resume'} className={'parallax-link'}>
+                        <a href={PDF}
+                           rel="noopener noreferrer"
+                           target="_blank"
+                           className={'parallax-link ml-3'}>
                             <GetAppIcon fontSize={'large'} className={'parallax-svg'}/>
                             <Typography variant={'h5'} style={{display: 'inline'}}>Resume</Typography>
-                        </Link>
-
+                        </a>
 
                     </div>
                 </div>
