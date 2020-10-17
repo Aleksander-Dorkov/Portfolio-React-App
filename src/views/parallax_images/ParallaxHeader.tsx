@@ -29,19 +29,22 @@ function ParallaxHeader() {
                         <Typography variant={'h1'} style={{display: 'inline', color: '#00affb'}}> Dorkov</Typography>
                         <Typography variant={'h3'} className={'ml-3'}>Software Engineer</Typography>
 
-                        <IconButton color="inherit" aria-label="upload picture" component="span">
-                            <Link to={'/resume'}>Get My resume</Link>
-                            <a href="https://github.com/Aleksander-D-92" target={'_blank'} rel="noopener noreferrer"
-                               className={'parallax-link'}><GitHubIcon fontSize={'large'}/>
-                            </a>
-                        </IconButton>
-                        <Typography variant={'h5'} style={{display: 'inline'}}>Github</Typography>
-                        <IconButton color="inherit" aria-label="upload picture" component="span">
-                            <a href="https://www.docdroid.net/OzLGWJz/resume-pdf" target={'_blank'} rel="noopener noreferrer"
-                               className={'parallax-link'}><GetAppIcon fontSize={'large'}/>
-                            </a>
-                               </IconButton>
-                        <Typography variant={'h5'} style={{display: 'inline'}}>Resume</Typography>
+
+                        <a href="https://github.com/Aleksander-D-92"
+                           target={'_blank'}
+                           rel="noopener noreferrer"
+                           className={'parallax-link'}>
+                            <GitHubIcon fontSize={'large'} className={'parallax-svg'}/>
+                            <Typography variant={'h5'} style={{display: 'inline'}}>Github</Typography>
+                        </a>
+
+
+                        <Link to={'/resume'} className={'parallax-link'}>
+                            <GetAppIcon fontSize={'large'} className={'parallax-svg'}/>
+                            <Typography variant={'h5'} style={{display: 'inline'}}>Resume</Typography>
+                        </Link>
+
+
                     </div>
                 </div>
             </Parallax>

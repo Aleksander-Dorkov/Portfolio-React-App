@@ -13,7 +13,7 @@ function WebAppRoutes() {
                 <Route exact={true} path="/resume">
                     <ResumePDF/>
                 </Route>
-                <Route exact={true} path="*">
+                <Route path="*">
                     <LandingPage/>
                 </Route>
             </Switch>

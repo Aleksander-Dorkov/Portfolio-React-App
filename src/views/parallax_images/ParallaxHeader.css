@@ -1,6 +1,17 @@
 .parallax-link:visited {
     color: white;
 }
-.parallax-link{
+
+.parallax-link {
+    text-decoration: none;
+}
+
+.parallax-link {
     color: white;
+}
+
+.parallax-svg {
+    position: relative;
+    top: 5px;
+    margin-right: 2px;
 }

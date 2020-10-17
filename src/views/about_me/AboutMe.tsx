@@ -73,7 +73,7 @@ function AboutMe() {
                         {/*previous jobs*/}
                         <AboutMeSectionTitle title={'Previous work experience'}/>
                         <AboutMeListTitle value={'GSMOne, Sales Consultant'}
-                                          description={'My responsibilities are listed below. Unfortunately the firm bankrupted during the corona virus outbreak due to the lack of customers'}/>
+                                          description={'My responsibilities are listed below.'}/>
                         <ul style={{listStyleType: 'none'}}>
                             <AboutMeListItem
                                 checkBoxSvg={true}

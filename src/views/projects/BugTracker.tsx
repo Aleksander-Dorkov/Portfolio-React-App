@@ -58,6 +58,8 @@ function BugTracker() {
                         <ul style={listStyles}>
                             <ListItemCode svg={<NpmSvg/>} value={'Typescript'}/>
                             <ListItemCode svg={<NpmSvg/>} value={'React'}/>
+                            <ListItemCode svg={<NpmSvg/>} value={'React Hook Form'}
+                                          description={'- for form validation'}/>
                             <ListItemCode svg={<NpmSvg/>} value={'React Router Dom'}/>
                             <ListItemCode svg={<NpmSvg/>} value={'React Redux'}/>
                             <ListItemCode svg={<NpmSvg/>} value={'Ant Design'}

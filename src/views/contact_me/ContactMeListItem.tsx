@@ -1,6 +1,7 @@
-import React, {CSSProperties} from "react";
+import React, {CSSProperties, ReactNode} from "react";
 import EmailIcon from '@material-ui/icons/Email';
 import PhoneAndroidIcon from '@material-ui/icons/PhoneAndroid';
+import FeaturedPlayListIcon from '@material-ui/icons/FeaturedPlayList';
 import {Typography} from "@material-ui/core";
 import ScrollAnimation from "react-animate-on-scroll";
 
@@ -11,6 +12,7 @@ interface Props {
     mailSvg?: boolean
     phoneSvg?: boolean
     githubSvg?: boolean
+    resumeSvg?: boolean
 }
 
 function ContactMeListItem(props: Props) {
@@ -22,10 +24,11 @@ function ContactMeListItem(props: Props) {
 
     return (
         <>
-            <ScrollAnimation animateIn="animate__backInLeft">
+            <ScrollAnimation animateIn="animate__backInLeft" animateOnce={true}>
                 <li>
                     {props.mailSvg && <EmailIcon style={svgStyles}/>}
                     {props.phoneSvg && <PhoneAndroidIcon style={svgStyles}/>}
+                    {props.resumeSvg && <FeaturedPlayListIcon style={svgStyles}/>}
                     <Typography variant={'h6'}
                                 style={{display: 'inline-block'}}>
                         {props.title}&nbsp;:&nbsp;

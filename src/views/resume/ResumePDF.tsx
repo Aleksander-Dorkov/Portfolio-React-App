@@ -10,7 +10,7 @@ function ResumePDF() {
             useDownloader: true,
             path: 'lib',
             initialDoc: 'Aleksander-Dorkov-Resume.pdf'
-        }, viewerDiv.current as HTMLDivElement).then((instance) => {
+        }, viewerDiv.current as HTMLDivElement).then(() => {
 
         })
     }, [])
