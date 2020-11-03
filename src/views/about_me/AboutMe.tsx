@@ -72,39 +72,39 @@ function AboutMe() {
 
                         {/*previous jobs*/}
                         <AboutMeSectionTitle title={'Previous work experience'}/>
-                        <AboutMeListTitle value={'GSMOne, Sales Consultant'}
-                                          description={'My responsibilities are listed below.'}/>
+                        <AboutMeListTitle value={'Clothing Store'}
+                                          description={'April 2018 - September 2020. My responsibilities are listed below.'}/>
                         <ul style={{listStyleType: 'none'}}>
                             <AboutMeListItem
                                 checkBoxSvg={true}
-                                value={'Recommended and selected products for customers based on their individual needs'}/>
+                                value={'Assisted team members as needed throughout the store'}/>
                             <AboutMeListItem
                                 checkBoxSvg={true}
-                                value={'Maintained a working knowledge of the company\'s various products and services'}/>
+                                value={'Found solutions to client problems'}/>
                             <AboutMeListItem
                                 checkBoxSvg={true}
-                                value={'Completed administrative tasks, such as processing and recording sales, as needed'}/>
+                                value={'Consulted clients to help them make the right purchases'}/>
                             <AboutMeListItem
                                 checkBoxSvg={true}
-                                value={'Assisted fellow associates as needed throughout the store'}/>
+                                value={'Maintained orderly appearance in the store'}/>
                             <AboutMeListItem
                                 checkBoxSvg={true}
-                                value={'Described products and explain their benefits and uses to potential customers'}/>
+                                value={'Loaded goods from the warehouse\n'}/>
                         </ul>
 
-                        <AboutMeListTitle value={'Fantastico, Sales Consultant'}
-                                          description={'My responsibilities are listed below'}/>
-                        <ul style={{listStyleType: 'none'}}>
-                            <AboutMeListItem
-                                checkBoxSvg={true}
-                                value={'Kept my area stocked, clean, and safe'}/>
-                            <AboutMeListItem
-                                checkBoxSvg={true}
-                                value={'Assisted fellow associates as needed throughout the store'}/>
-                            <AboutMeListItem
-                                checkBoxSvg={true}
-                                value={'Helped customers find the products they are looking for'}/>
-                        </ul>
+                        {/*<AboutMeListTitle value={'Fantastico, Sales Consultant'}*/}
+                        {/*                  description={'My responsibilities are listed below'}/>*/}
+                        {/*<ul style={{listStyleType: 'none'}}>*/}
+                        {/*    <AboutMeListItem*/}
+                        {/*        checkBoxSvg={true}*/}
+                        {/*        value={'Kept my area stocked, clean, and safe'}/>*/}
+                        {/*    <AboutMeListItem*/}
+                        {/*        checkBoxSvg={true}*/}
+                        {/*        value={'Assisted fellow associates as needed throughout the store'}/>*/}
+                        {/*    <AboutMeListItem*/}
+                        {/*        checkBoxSvg={true}*/}
+                        {/*        value={'Helped customers find the products they are looking for'}/>*/}
+                        {/*</ul>*/}
 
                         {/*education*/}
                         <AboutMeSectionTitle title={'Education'}/>
@@ -120,7 +120,7 @@ function AboutMe() {
                         <ul style={{listStyleType: 'none'}}>
                             <AboutMeListItem
                                 educationSvg={true}
-                                value={'Audio System and Cinema Diploma'}/>
+                                value={'Audio Systems and Cinema Diploma'}/>
                         </ul>
                     </Grid>
 

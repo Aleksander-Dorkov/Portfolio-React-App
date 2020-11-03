@@ -15,6 +15,7 @@ interface Props {
 function AboutMeListItem(props: Props) {
     const styles = {
         position: 'relative',
+        display: 'inline-block',
         top: '5px',
         right: '3px'
     } as CSSProperties;
