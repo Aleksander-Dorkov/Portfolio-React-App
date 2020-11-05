@@ -1,5 +1,5 @@
 <h1>My Portfolio</h1>
-<h2><a href="https://online-movie-database.netlify.app" target="_blank">Deployed on Netlify (click)</a></h2>
+<h2><a href="https://aleksander-dorkov.netlify.app/" target="_blank">Deployed on Netlify (click)</a></h2>
 
 <h3>This is a React App created using <code>Create React App</code> with <code>Typescript</code> template</h3>
 <h3>Some of the Dependencies Used</h3>
