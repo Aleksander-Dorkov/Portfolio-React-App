@@ -26,6 +26,10 @@ function FrontEnd() {
                     tooltip={'TypeScript'}
                     animation={'animate__backInRight'}/>
                 <Skill
+                    svgUrl={'https://www.vectorlogo.zone/logos/angular/angular-icon.svg'}
+                    tooltip={'Angular'}
+                    animation={'animate__backInRight'}/>
+                <Skill
                     svgUrl={'https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg'}
                     tooltip={'React'}
                     animation={'animate__backInRight'}/>
