@@ -9,6 +9,7 @@ function AboutMePicture() {
                      alt="not available"
                      width={200}
                      height={300}/>
+
             </ScrollAnimation>
         </>
     )

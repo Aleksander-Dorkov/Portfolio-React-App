@@ -7,8 +7,8 @@ import {Grid} from "@material-ui/core";
 function FrontEnd() {
     return (
         <>
-            <SkillSectionTitle value={'Front End'}/>
-            <Grid container={true} justify={'center'} alignItems={'center'}>
+            <Grid container={true} justify={'center'} alignItems={'flex-start'}>
+                <SkillSectionTitle value={'Front End'}/>
                 <Skill
                     svgUrl={'https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg'}
                     tooltip={'HTML'}

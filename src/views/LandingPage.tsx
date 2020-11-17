@@ -24,7 +24,7 @@ function LandingPage() {
 
             {/*front end and back end skills*/}
             <SectionTitle name={'Skills'} id={'skillSection'}/>
-            <Grid container={true} justify={'center'} alignItems={'center'}>
+            <Grid container={true} justify={'center'}  alignItems={'flex-start'}>
                 <Grid item xs={6}>
                     <BackEnd/>
                 </Grid>

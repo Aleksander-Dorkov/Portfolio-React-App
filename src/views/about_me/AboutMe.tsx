@@ -10,12 +10,11 @@ function AboutMe() {
     return (
         <Grid item={true} xs={11}>
             <Card elevation={10}>
-                <Grid container={true} spacing={5} xs={12}>
-                    <Grid item={true} xs={3}>
+                <Grid container={true} spacing={5} xs={12} >
+                    <Grid item={true} md={3} xs={12}>
                         <AboutMePicture/>
                     </Grid>
-
-                    <Grid item={true} xs={8}>
+                    <Grid item={true} xs={11} md={8} className={'ml-4'}>
                         {/*personal projects*/}
                         <AboutMeSectionTitle title={'My developers journey'}/>
                         <AboutMeListTitle value={'Personal Projects'}
@@ -123,7 +122,6 @@ function AboutMe() {
                                 value={'Audio Systems and Cinema Diploma'}/>
                         </ul>
                     </Grid>
-
                 </Grid>
             </Card>
         </Grid>

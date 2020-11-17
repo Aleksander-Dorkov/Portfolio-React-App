@@ -6,8 +6,8 @@ import {Grid} from "@material-ui/core";
 function BackEnd() {
     return (
         <>
-            <SkillSectionTitle value={'Back End'}/>
-            <Grid container={true} justify={'center'} alignItems={'center'}>
+            <Grid container={true} justify={'center'} alignItems={'flex-start'}>
+                <SkillSectionTitle value={'Back End'}/>
                 <Skill
                     svgUrl={'https://www.vectorlogo.zone/logos/java/java-icon.svg'}
                     tooltip={'Java'}
@@ -39,9 +39,12 @@ function BackEnd() {
                     tooltip={'Spring GraphQL'}
                     animation={'animate__backInLeft'}/>
                 <Skill
-                    svgUrl={'https://miro.medium.com/max/692/0*zT7_k4NJrPynFzyV.png'}
-                    tooltip={'JUnit and Mockito'}
-                    width={280}
+                    svgUrl={'https://junit.org/junit5/assets/img/junit5-logo.png'}
+                    tooltip={'JUnit5'}
+                    animation={'animate__backInLeft'}/>
+                <Skill
+                    svgUrl={'https://raw.githubusercontent.com/vscode-icons/vscode-icons/7dee48469efc251a6426e81c788482e2734f7b7d/icons/file_type_maven.svg'}
+                    tooltip={'Maven'}
                     animation={'animate__backInLeft'}/>
             </Grid>
         </>
