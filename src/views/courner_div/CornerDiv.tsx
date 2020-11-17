@@ -52,11 +52,11 @@ function CornerDiv() {
         <>
 
             <Typography style={tooltipStyles} variant={'subtitle1'}>
-                Portfolio Code
+                Github Account
             </Typography>
             <div id="corner-triangle" style={{borderColor: `transparent ${color} transparent transparent`}}>
                 <div className="corner-triangle-text">
-                    <a href="https://github.com/Aleksander-D-92/Portfolio-React-App"
+                    <a href="https://github.com/Aleksander-D-92"
                        rel="noopener noreferrer"
                        target="_blank">
                         <GitHubIcon style={btnStyles} onMouseEnter={show} onMouseLeave={hide}/>

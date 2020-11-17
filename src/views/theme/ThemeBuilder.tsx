@@ -26,7 +26,7 @@ function ThemeBuilder() {
     return (
         <>
             <Tooltip title={(disabled) ? 'Only For Paid Account or Admin' : "Toggle dark/light theme"}>
-                <Paper className={'theme-paper'} elevation={15}>
+                <Paper className={'theme-paper'} elevation={24}>
                     <IconButton style={{padding: '5px'}} disabled={disabled}>
                         {darkTheme ?
                             <Brightness7Icon style={{fontSize: '85px'}} onClick={() => dispatch(setLightTheme())}/>
