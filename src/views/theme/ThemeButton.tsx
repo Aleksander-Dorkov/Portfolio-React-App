@@ -12,6 +12,7 @@ function ThemeButton() {
     const dispatch = useDispatch();
     const darkTheme = useSelector((state: ReduxState) => state.darkTheme);
     const [disabled, setDisabled] = useState<boolean>(true);
+    const [displayTooltip, setDisplayTooltip] = useState<boolean>(true);
 
     useEffect(() => {
         let item = localStorage.getItem('theme');
@@ -21,13 +22,18 @@ function ThemeButton() {
             dispatch(setLightTheme());
         }
         setDisabled(false);
-    }, [dispatch])
+    }, [dispatch]);
+
+    function toggleTooltip() {
+        setDisplayTooltip(false);
+    }
 
     return (
         <>
-            <Tooltip title={(disabled) ? 'Only For Paid Account or Admin' : "Toggle dark/light theme"} open={true}>
+            <Tooltip title={(disabled) ? 'Only For Paid Account or Admin' : "Click to Toggle dark/light theme"}
+                     open={displayTooltip}>
                 <Paper className={'theme-paper'} elevation={24}>
-                    <IconButton style={{padding: '5px'}} disabled={disabled}>
+                    <IconButton style={{padding: '5px'}} disabled={disabled} onClick={toggleTooltip}>
                         {darkTheme ?
                             <Brightness7Icon style={{fontSize: '85px'}} onClick={() => dispatch(setLightTheme())}/>
                             :
