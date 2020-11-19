@@ -30,7 +30,7 @@ function ThemeButton() {
 
     return (
         <>
-            <Tooltip title={(disabled) ? 'Only For Paid Account or Admin' : "Click to Toggle dark/light theme"}
+            <Tooltip title={(disabled) ? 'Only For Paid Account or Admin' : "Click to Toggle Dark/Light Theme"}
                      open={displayTooltip}>
                 <Paper className={'theme-paper'} elevation={24}>
                     <IconButton style={{padding: '5px'}} disabled={disabled} onClick={toggleTooltip}>
