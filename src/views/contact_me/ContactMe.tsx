@@ -4,7 +4,7 @@ import {ContactSectionTitle} from "./ContactSectionTitle";
 import {ContactMeListItem} from "./ContactMeListItem";
 import {ContactMeForm} from "./ContactMeForm";
 // @ts-ignore
-import PDF from '../resume/Aleksander-Dorkov-Resume.pdf';
+import PDF from '../resume/Aleksandar-Dorkov-Resume.pdf';
 
 function ContactMe() {
     return (
@@ -19,7 +19,7 @@ function ContactMe() {
                                            phoneSvg={true}/>
                         <ContactMeListItem title={'Email Address'}
                                            description={'Click to send me an email'}
-                                           link={'mailto: aleksander.dorkov@gmail.com'}
+                                           link={'mailto: aleksandar.dorkov@gmail.com'}
                                            mailSvg={true}/>
                         <ContactMeListItem title={'Resume'}
                                            description={'Click to read my resume online'}

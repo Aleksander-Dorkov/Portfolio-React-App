@@ -10,15 +10,75 @@ function AboutMe() {
     return (
         <Grid item={true} xs={11}>
             <Card elevation={10}>
-                <Grid container={true} spacing={5} xs={12} >
+                <Grid container={true} spacing={5} xs={12}>
                     <Grid item={true} md={3} xs={12}>
                         <AboutMePicture/>
                     </Grid>
                     <Grid item={true} xs={11} md={8} className={'ml-4'}>
+                        {/*previous jobs*/}
+                        {/*VIVACOM*/}
+                        <AboutMeSectionTitle title={'Software Engineer work experience'}/>
+                        <AboutMeListTitle title={'VIVACOM'}
+                                          role={'Full Stack Java Developer'}
+                                          date={'December 2020 - Present'}/>
+                        <ul style={{listStyleType: 'none'}}>
+                            <AboutMeListItem
+                                checkBoxSvg={true}
+                                value={'Created and updated RESTful APIs consumed by mobile applications'}/>
+                            <AboutMeListItem
+                                checkBoxSvg={true}
+                                value={'Maintained and enchased an existing Web Applications back-end and UI'}/>
+                            <AboutMeListItem
+                                checkBoxSvg={true}
+                                value={'Designed web clients to consume RESTful web services'}/>
+                            <AboutMeListItem
+                                checkBoxSvg={true}
+                                value={'Deployed the newest versions of the application using Jenkins with blue-green deployment strategy'}/>
+                            <AboutMeListItem
+                                checkBoxSvg={true}
+                                value={'Implemented unit and integration tests and documented the code'}/>
+                        </ul>
+                        {/*Илиянци*/}
+                        <AboutMeSectionTitle title={'Other work experience'}/>
+                        <AboutMeListTitle title={'Clothing Store - Iliyantsi'}
+                                          role={'Sales Associate'}
+                                          date={'April 2018 - September 2020'}/>
+                        <ul style={{listStyleType: 'none'}}>
+                            <AboutMeListItem
+                                checkBoxSvg={true}
+                                value={'Assisted team members as needed throughout the store'}/>
+                            <AboutMeListItem
+                                checkBoxSvg={true}
+                                value={'Found solutions to client problems'}/>
+                            <AboutMeListItem
+                                checkBoxSvg={true}
+                                value={'Consulted clients to help them make the right purchases'}/>
+                            <AboutMeListItem
+                                checkBoxSvg={true}
+                                value={'Maintained orderly appearance in the store'}/>
+                            <AboutMeListItem
+                                checkBoxSvg={true}
+                                value={'Loaded goods from the warehouse\n'}/>
+                        </ul>
+                        <AboutMeListTitle title={'GSM ONE'}
+                                          role={'Sales Associate'}
+                                          date={'February 2018 - Apr 2018'}/>
+                        <ul style={{listStyleType: 'none'}}>
+                            <AboutMeListItem
+                                checkBoxSvg={true}
+                                value={'Staying knowledgeable about our range of phone accessories'}/>
+                            <AboutMeListItem
+                                checkBoxSvg={true}
+                                value={'Explaining the benefits and functions of products to customers'}/>
+                            <AboutMeListItem
+                                checkBoxSvg={true}
+                                value={'Maintained orderly appearance in the store'}/>
+                        </ul>
+                        {/*My developers journey*/}
                         {/*personal projects*/}
                         <AboutMeSectionTitle title={'My developers journey'}/>
-                        <AboutMeListTitle value={'Personal Projects'}
-                                          description={'Projects i did with the purpose of becoming a better developer'}/>
+                        <AboutMeListTitle title={'Personal Projects'}
+                                          role={'Projects i did with the purpose of becoming a better developer'}/>
                         <ul style={{listStyleType: 'none'}}>
                             <AboutMeListItem
                                 codeSvg={true}
@@ -47,8 +107,8 @@ function AboutMe() {
                         </ul>
 
                         {/*SoftUni*/}
-                        <AboutMeListTitle value={'SoftUni Free Courses'}
-                                          description={'I never went to SoftUni in person, just used the materials they provide for free like videos and homeworks'}/>
+                        <AboutMeListTitle title={'SoftUni Free Courses'}
+                                          role={'I never went to SoftUni in person, just used the materials they provide for free like videos and homeworks'}/>
                         <ul style={{listStyleType: 'none'}}>
                             <AboutMeListItem
                                 codeSvg={true}
@@ -68,53 +128,17 @@ function AboutMe() {
                                 codeSvg={true}
                                 value={'Passed through all of the courses of the "Java Web Developer module"'}/>
                         </ul>
-
-                        {/*previous jobs*/}
-                        <AboutMeSectionTitle title={'Previous work experience'}/>
-                        <AboutMeListTitle value={'Clothing Store'}
-                                          description={'April 2018 - September 2020. My responsibilities are listed below.'}/>
-                        <ul style={{listStyleType: 'none'}}>
-                            <AboutMeListItem
-                                checkBoxSvg={true}
-                                value={'Assisted team members as needed throughout the store'}/>
-                            <AboutMeListItem
-                                checkBoxSvg={true}
-                                value={'Found solutions to client problems'}/>
-                            <AboutMeListItem
-                                checkBoxSvg={true}
-                                value={'Consulted clients to help them make the right purchases'}/>
-                            <AboutMeListItem
-                                checkBoxSvg={true}
-                                value={'Maintained orderly appearance in the store'}/>
-                            <AboutMeListItem
-                                checkBoxSvg={true}
-                                value={'Loaded goods from the warehouse\n'}/>
-                        </ul>
-
-                        {/*<AboutMeListTitle value={'Fantastico, Sales Consultant'}*/}
-                        {/*                  description={'My responsibilities are listed below'}/>*/}
-                        {/*<ul style={{listStyleType: 'none'}}>*/}
-                        {/*    <AboutMeListItem*/}
-                        {/*        checkBoxSvg={true}*/}
-                        {/*        value={'Kept my area stocked, clean, and safe'}/>*/}
-                        {/*    <AboutMeListItem*/}
-                        {/*        checkBoxSvg={true}*/}
-                        {/*        value={'Assisted fellow associates as needed throughout the store'}/>*/}
-                        {/*    <AboutMeListItem*/}
-                        {/*        checkBoxSvg={true}*/}
-                        {/*        value={'Helped customers find the products they are looking for'}/>*/}
-                        {/*</ul>*/}
-
                         {/*education*/}
                         <AboutMeSectionTitle title={'Education'}/>
-                        <AboutMeListTitle value={'Technical University of Sofia'}
+                        <AboutMeListTitle title={'Technical University of Sofia'}
+
                         />
                         <ul style={{listStyleType: 'none'}}>
                             <AboutMeListItem
                                 educationSvg={true}
                                 value={'Mechanical Engineering Bachelors Degree'}/>
                         </ul>
-                        <AboutMeListTitle value={'Lomonosov High School'}
+                        <AboutMeListTitle title={'Lomonosov High School'}
                         />
                         <ul style={{listStyleType: 'none'}}>
                             <AboutMeListItem

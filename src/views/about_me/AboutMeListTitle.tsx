@@ -2,8 +2,9 @@ import React from "react";
 import {Typography} from "@material-ui/core";
 
 interface Props {
-    value: string,
-    description?: string
+    title: string,
+    role?: string,
+    date?: string
 }
 
 function AboutMeListTitle(props: Props) {
@@ -12,12 +13,17 @@ function AboutMeListTitle(props: Props) {
             <Typography variant={'h5'}
                         color={'textPrimary'}
                         style={{textDecoration: 'underline'}}>
-                {props.value}
+                {props.title}
             </Typography>
-            {props.description !== undefined &&
+            {props.role !== undefined &&
             <Typography variant={'subtitle1'}
                         color={'textSecondary'}>
-                {props.description}
+                {props.role}
+            </Typography>}
+            {props.date !== undefined &&
+            <Typography variant={'subtitle1'}
+                        color={'textSecondary'}>
+                {props.date}
             </Typography>}
 
         </>

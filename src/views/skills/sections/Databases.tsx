@@ -5,14 +5,22 @@ import {SkillSectionTitle} from "./SkillSectionTitle";
 function Databases() {
     return (
         <>
-            <SkillSectionTitle value={'Databases'}/>
+            <SkillSectionTitle value={'SQL/NoSQL'}/>
             <Skill
                 svgUrl={'https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg'}
                 tooltip={'PostgreSQL'}
                 animation={'animate__backInUp'}/>
             <Skill
-                svgUrl={'https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg'}
-                tooltip={'MySQL'}
+                svgUrl={'https://www.vectorlogo.zone/logos/oracle/oracle-icon.svg'}
+                tooltip={'OracleDB'}
+                animation={'animate__backInUp'}/>
+            <Skill
+                svgUrl={'https://www.vectorlogo.zone/logos/redis/redis-icon.svg'}
+                tooltip={'Redis'}
+                animation={'animate__backInUp'}/>
+            <Skill
+                svgUrl={'https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg'}
+                tooltip={'MongoDB'}
                 animation={'animate__backInUp'}/>
         </>
     )

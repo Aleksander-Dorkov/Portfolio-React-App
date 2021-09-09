@@ -1,6 +1,7 @@
 import React from "react";
-import {Route, Switch} from "react-router-dom";
+import {Redirect, Route, Switch} from "react-router-dom";
 import {LandingPage} from "../../views/LandingPage";
+
 
 function WebAppRoutes() {
     return (
@@ -10,7 +11,7 @@ function WebAppRoutes() {
                     <LandingPage/>
                 </Route>
                 <Route path="*">
-                    <LandingPage/>
+                    <Redirect to='/'/>
                 </Route>
             </Switch>
         </>

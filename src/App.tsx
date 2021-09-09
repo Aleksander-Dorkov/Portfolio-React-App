@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {useSelector} from "react-redux";
 import {ReduxState} from "./configuration/redux/ReduxStore";
-import {createMuiTheme, Grid, Paper, Theme, ThemeProvider} from "@material-ui/core";
+import {createMuiTheme, Paper, Theme, ThemeProvider} from "@material-ui/core";
 import {ThemeButton} from "./views/theme/ThemeButton";
 import {TopNav} from "./views/header/TopNav";
 import {DARK_MUI_THEME, LIGHT_MUI_THEME} from "./views/theme/variables";
@@ -36,11 +36,7 @@ function App() {
             <ThemeProvider theme={(currentTheme === undefined) ? defaultTHeme : currentTheme}>
                 <ThemeButton/>
                 <Paper>
-                    <Grid container spacing={0}>
-                        <Grid item xs={12} id={'header'}>
-                            <TopNav/>
-                        </Grid>
-                    </Grid>
+                    <TopNav/>
                     <WebAppRoutes/>
                 </Paper>
             </ThemeProvider>

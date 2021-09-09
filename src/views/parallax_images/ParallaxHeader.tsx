@@ -5,7 +5,7 @@ import GetAppIcon from '@material-ui/icons/GetApp';
 import './ParallaxHeader.css'
 import GitHubIcon from '@material-ui/icons/GitHub';
 // @ts-ignore
-import PDF from '../resume/Aleksander-Dorkov-Resume.pdf';
+import PDF from '../resume/Aleksandar-Dorkov-Resume.pdf';
 
 function ParallaxHeader() {
     const nameStyles = {

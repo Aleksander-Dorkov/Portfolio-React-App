@@ -9,7 +9,7 @@ function AboutMeSectionTitle(props: Props) {
     return (
         <>
             <Typography
-                variant={"h3"}
+                variant={"h4"}
                 className={'mt-2'}
                 style={{fontWeight: 'bold'}}>
                 {props.title}

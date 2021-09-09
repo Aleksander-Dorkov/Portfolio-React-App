@@ -2,6 +2,8 @@ import React, {BaseSyntheticEvent, useState} from "react";
 import {Button, CircularProgress, Grid, TextField} from "@material-ui/core";
 import {useForm} from "react-hook-form";
 import emailjs from 'emailjs-com';
+import {toast, ToastContainer, Zoom} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function ContactMeForm() {
@@ -15,21 +17,25 @@ function ContactMeForm() {
     const [loading, setLoading] = useState<boolean>(false);
 
     function onSubmit(data: any, event: BaseSyntheticEvent | undefined) {
-
         setLoading(true);
         if (event === undefined) {
             setLoading(false);
             return;
         }
-
         emailjs.sendForm('gmail', 'template_djoyjve', event.target, 'user_6EWwJ2wkUdvLuWsqq33Sr')
             .then((result: any) => {
                 setLoading(false);
                 event.target.reset();
+                toast.success(`Thank you for your feedback ${data.name}`, {
+                    position: 'bottom-right'
+                })
                 console.log(result.text);
             }, (error: any) => {
                 setLoading(false);
                 event.target.reset();
+                toast.error(`Error: ${error.text}`, {
+                    position: 'bottom-left'
+                })
                 console.log(error.text);
             });
     }
@@ -88,6 +94,7 @@ function ContactMeForm() {
                         {loading && <CircularProgress size={20}/>}
                     </Button>
                 </form>
+                <ToastContainer transition={Zoom}/>
             </Grid>
         </>
     )

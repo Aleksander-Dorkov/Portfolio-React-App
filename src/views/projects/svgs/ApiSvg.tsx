@@ -11,7 +11,7 @@ function ApiSvg() {
         top: '10px',
         left: '-2px'
     } as CSSProperties
-    const apiSvg = 'https://www.flaticon.com/svg/static/icons/svg/603/603197.svg';
+    const apiSvg = 'https://image.flaticon.com/icons/png/512/603/603197.png';
 
     return (
         <>
