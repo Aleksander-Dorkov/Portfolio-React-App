@@ -108,7 +108,7 @@ function AboutMe() {
 
                         {/*SoftUni*/}
                         <AboutMeListTitle title={'SoftUni Free Courses'}
-                                          role={'I never went to SoftUni in person, just used the materials they provide for free like videos and homeworks'}/>
+                                          role={'I watched the SoftUni courses online from home and did the homeworks'}/>
                         <ul style={{listStyleType: 'none'}}>
                             <AboutMeListItem
                                 codeSvg={true}
