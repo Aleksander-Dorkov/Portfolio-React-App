@@ -27,14 +27,14 @@ function ContactMeForm() {
                 setLoading(false);
                 event.target.reset();
                 toast.success(`Thank you for your feedback ${data.name}`, {
-                    position: 'bottom-right'
+
                 })
                 console.log(result.text);
             }, (error: any) => {
                 setLoading(false);
                 event.target.reset();
                 toast.error(`Error: ${error.text}`, {
-                    position: 'bottom-left'
+
                 })
                 console.log(error.text);
             });
@@ -94,7 +94,7 @@ function ContactMeForm() {
                         {loading && <CircularProgress size={20}/>}
                     </Button>
                 </form>
-                <ToastContainer transition={Zoom}/>
+                <ToastContainer transition={Zoom} style={{width: '18%', height: '50%'}} position={"bottom-center"}/>
             </Grid>
         </>
     )
