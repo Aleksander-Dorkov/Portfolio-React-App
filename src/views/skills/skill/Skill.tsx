@@ -17,7 +17,7 @@ function Skill(props: Props) {
                              style={{display: 'inline-block'}} className={'skill-image'}>
                 <Card elevation={10}
                       className={'m-2'}
-                      style={{minWidth: '200px'}}>
+                      style={{minWidth: '210px'}}>
                     <Grid container={true} justify={'center'} alignItems={'center'}>
                         <img src={props.svgUrl}
                              className={'mt-2'}

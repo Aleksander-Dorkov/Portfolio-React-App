@@ -23,7 +23,7 @@ function SkillSectionTitle(props: Props) {
                                  className={'mb-1 mt-3'}>
                     <Typography variant={'h3'}
                                 align={'center'}
-                                style={{fontWeight: 'bold', paddingLeft: '80px'}}>
+                                style={{fontWeight: 'bold'}}>
                         {handleTitle(props.value)}
                     </Typography>
                 </ScrollAnimation>

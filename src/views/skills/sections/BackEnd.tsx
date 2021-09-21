@@ -36,14 +36,14 @@ function BackEnd() {
                     tooltip={'Hibernate'}
                     animation={'animate__backInLeft'}/>
                 <Skill svgUrl={'https://i.ibb.co/D74QSpz/thymeleaf-eddited.png'}
-                       tooltip={'Thymeleaf'}
+                       tooltip={'Thymeleaf and JSP'}
                        animation={'animate__backInLeft'}/>
-                <Skill svgUrl={'https://i.ibb.co/DwSDS6c/imageedit-1-9716598666.png    099'}
-                       tooltip={'JSP'}
-                       animation={'animate__backInLeft'}/>
+                {/*<Skill svgUrl={'https://i.ibb.co/DwSDS6c/imageedit-1-9716598666.png    099'}*/}
+                {/*       tooltip={'JSP'}*/}
+                {/*       animation={'animate__backInLeft'}/>*/}
                 <Skill
                     svgUrl={'https://junit.org/junit5/assets/img/junit5-logo.png'}
-                    tooltip={'JUnit5'}
+                    tooltip={'JUnit5 and Mockito'}
                     animation={'animate__backInLeft'}/>
                 <Skill
                     svgUrl={'https://raw.githubusercontent.com/vscode-icons/vscode-icons/7dee48469efc251a6426e81c788482e2734f7b7d/icons/file_type_maven.svg'}

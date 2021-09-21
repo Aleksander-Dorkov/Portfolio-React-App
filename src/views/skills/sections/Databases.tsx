@@ -5,7 +5,7 @@ import {SkillSectionTitle} from "./SkillSectionTitle";
 function Databases() {
     return (
         <>
-            <SkillSectionTitle value={'SQL/NoSQL'}/>
+            <SkillSectionTitle value={'Databases'}/>
             <Skill
                 svgUrl={'https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg'}
                 tooltip={'PostgreSQL'}

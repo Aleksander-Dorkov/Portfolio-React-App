@@ -1,6 +1,6 @@
-import {Theme} from "@material-ui/core";
+import {createMuiTheme, Theme} from "@material-ui/core";
 
-const LIGHT_MUI_THEME = {
+const LIGHT_MUI_THEME_PROPS = {
     palette: {
         type: "light",
         // primary: purple
@@ -14,7 +14,7 @@ const LIGHT_MUI_THEME = {
     }
 } as Theme;
 
-const DARK_MUI_THEME = {
+const DARK_MUI_THEME_PROPS = {
     palette: {
         type: "dark",
         primary: {
@@ -31,5 +31,6 @@ const DARK_MUI_THEME = {
         }
     }
 } as Theme;
-
-export {DARK_MUI_THEME, LIGHT_MUI_THEME}
+const DARK_THEME = createMuiTheme(DARK_MUI_THEME_PROPS);
+const LIGHT_THEME = createMuiTheme(LIGHT_MUI_THEME_PROPS);
+export {DARK_MUI_THEME_PROPS, LIGHT_MUI_THEME_PROPS, DARK_THEME, LIGHT_THEME}
