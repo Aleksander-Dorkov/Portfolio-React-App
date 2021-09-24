@@ -33,6 +33,9 @@ function AboutMe() {
                                 value={'Designed web clients to consume RESTful web services'}/>
                             <AboutMeListItem
                                 checkBoxSvg={true}
+                                value={'Established communication between microservices with JSM (ActiveMQ Artemis)'}/>
+                            <AboutMeListItem
+                                checkBoxSvg={true}
                                 value={'Deployed the newest versions of the application using Jenkins with blue-green deployment strategy'}/>
                             <AboutMeListItem
                                 checkBoxSvg={true}

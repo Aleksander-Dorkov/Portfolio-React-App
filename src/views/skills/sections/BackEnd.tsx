@@ -38,9 +38,9 @@ function BackEnd() {
                 <Skill svgUrl={'https://i.ibb.co/D74QSpz/thymeleaf-eddited.png'}
                        tooltip={'Thymeleaf and JSP'}
                        animation={'animate__backInLeft'}/>
-                {/*<Skill svgUrl={'https://i.ibb.co/DwSDS6c/imageedit-1-9716598666.png    099'}*/}
-                {/*       tooltip={'JSP'}*/}
-                {/*       animation={'animate__backInLeft'}/>*/}
+                <Skill svgUrl={'https://www.vectorlogo.zone/logos/apache_activemq/apache_activemq-icon.svg'}
+                       tooltip={'ActiveMQ Artemis'}
+                       animation={'animate__backInLeft'}/>
                 <Skill
                     svgUrl={'https://junit.org/junit5/assets/img/junit5-logo.png'}
                     tooltip={'JUnit5 and Mockito'}

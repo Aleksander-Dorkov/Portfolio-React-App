@@ -26,12 +26,16 @@ function FrontEnd() {
                     tooltip={'TypeScript'}
                     animation={'animate__backInRight'}/>
                 <Skill
+                    svgUrl={'https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-icon.svg'}
+                    tooltip={'Bootstrap'}
+                    animation={'animate__backInRight'}/>
+                <Skill
                     svgUrl={'https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg'}
                     tooltip={'React'}
                     animation={'animate__backInRight'}/>
                 <Skill
                     svgUrl={'https://raw.githubusercontent.com/leungwensen/svg-icon/b84b3f3a3da329b7c1d02346865f8e98beb05413/dist/svg/logos/redux.svg'}
-                    tooltip={'Redux'}
+                    tooltip={'React-Redux'}
                     animation={'animate__backInRight'}/>
                 <Skill
                     svgUrl={'https://material-ui.com/static/logo_raw.svg'}
