@@ -18,7 +18,7 @@ function Footer() {
                             <a href="https://github.com/Aleksander-D-92"
                                target={'_blank'}
                                rel="noopener noreferrer"
-                               style={{color: '#d93a3d', textDecoration: 'none'}}>Alexander D.</a>
+                               style={{color: '#d93a3d', textDecoration: 'none'}}>Aleksandar D.</a>
                         </Typography>
                         <Typography variant={'subtitle1'} style={footerTextStyle}>Production</Typography>
                     </Grid>

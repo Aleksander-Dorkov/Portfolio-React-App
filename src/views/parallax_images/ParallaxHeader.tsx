@@ -26,7 +26,7 @@ function ParallaxHeader() {
                       style={{width: '100%'}}>
                 <div style={{height: 900}}>
                     <div style={nameStyles}>
-                        <Typography variant={'h1'} style={{display: 'inline'}} className={'ml-3'}>Alexander</Typography>
+                        <Typography variant={'h1'} style={{display: 'inline'}} className={'ml-3'}>Aleksandar</Typography>
                         <Typography variant={'h1'} style={{display: 'inline', color: '#00affb'}}> Dorkov</Typography>
                         <Typography variant={'h3'} className={'ml-3'}>Software Engineer</Typography>
 
