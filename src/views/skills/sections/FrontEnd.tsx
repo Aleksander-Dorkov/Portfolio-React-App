@@ -38,7 +38,7 @@ function FrontEnd() {
                     tooltip={'React-Redux'}
                     animation={'animate__backInRight'}/>
                 <Skill
-                    svgUrl={'https://material-ui.com/static/logo_raw.svg'}
+                    svgUrl={'https://cdn.worldvectorlogo.com/logos/material-ui-1.svg'}
                     tooltip={'Material-UI'}
                     animation={'animate__backInRight'}/>
                 <Skill
