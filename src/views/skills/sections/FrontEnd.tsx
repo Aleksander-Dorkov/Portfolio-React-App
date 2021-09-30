@@ -18,7 +18,7 @@ function FrontEnd() {
                     tooltip={'CSS'}
                     animation={'animate__backInRight'}/>
                 <Skill
-                    svgUrl={'https://cdn.worldvectorlogo.com/logos/javascript.svg'}
+                    svgUrl={'https://upload.vectorlogo.zone/logos/javascript/images/239ec8a4-163e-4792-83b6-3f6d96911757.svg'}
                     tooltip={'JavaScript'}
                     animation={'animate__backInRight'}/>
                 <Skill

@@ -7,13 +7,13 @@ interface Props {
 }
 
 function SkillSectionTitle(props: Props) {
+    //in case I want to use a name that contains a /
     function handleTitle(val: string) {
         if (!val.includes("/")) {
             return val;
-        } else {
-            const strings = val.split("/");
-            return `${strings[0]} / ${strings[1]}`;
         }
+        const strings = val.split("/");
+        return `${strings[0]} / ${strings[1]}`;
     }
 
     return (
