@@ -35,7 +35,7 @@ function BackEnd() {
                     svgUrl={'https://www.vectorlogo.zone/logos/hibernate/hibernate-icon.svg'}
                     tooltip={'Hibernate'}
                     animation={'animate__backInLeft'}/>
-                <Skill svgUrl={'https://i.ibb.co/D74QSpz/thymeleaf-eddited.png'}
+                <Skill svgUrl={'https://www.thymeleaf.org/images/thymeleaf.png'}
                        tooltip={'Thymeleaf and JSP'}
                        animation={'animate__backInLeft'}/>
                 <Skill svgUrl={'https://www.vectorlogo.zone/logos/apache_activemq/apache_activemq-icon.svg'}
