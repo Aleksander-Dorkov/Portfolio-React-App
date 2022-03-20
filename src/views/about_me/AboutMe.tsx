@@ -1,9 +1,9 @@
 import React from "react";
-import {Card, Grid} from "@material-ui/core";
-import {AboutMeListTitle} from "./AboutMeListTitle";
-import {AboutMeListItem} from "./AboutMeListItem";
-import {AboutMePicture} from "./AboutMePicture";
-import {AboutMeSectionTitle} from "./AboutMeSectionTitle";
+import { Card, Grid } from "@material-ui/core";
+import { AboutMeListTitle } from "./AboutMeListTitle";
+import { AboutMeListItem } from "./AboutMeListItem";
+import { AboutMePicture } from "./AboutMePicture";
+import { AboutMeSectionTitle } from "./AboutMeSectionTitle";
 
 
 function AboutMe() {
@@ -18,9 +18,26 @@ function AboutMe() {
                         {/*previous jobs*/}
                         {/*VIVACOM*/}
                         <AboutMeSectionTitle title={'Software Engineer work experience'}/>
+                        <AboutMeListTitle title={'VMware contract'}
+                                          role={'Full Stack Java Developer'}
+                                          date={'November 2021 - Present'}/>
+                        <ul style={{listStyleType: 'none'}}>
+                            <AboutMeListItem
+                                checkBoxSvg={true}
+                                value={'Created and updated RESTful APIs consumed by mobile applications'}/>
+                            <AboutMeListItem
+                                checkBoxSvg={true}
+                                value={'Maintained and enchased an existing Web Applications back-end and UI'}/>
+                            <AboutMeListItem
+                                checkBoxSvg={true}
+                                value={'Implemented unit and integration tests and documented the code'}/>
+                            <AboutMeListItem
+                                checkBoxSvg={true}
+                                value={'Securing backend applications with Spring Security and JWT'}/>
+                        </ul>
                         <AboutMeListTitle title={'VIVACOM'}
                                           role={'Full Stack Java Developer'}
-                                          date={'December 2020 - Present'}/>
+                                          date={'May 2020 - October 2021'}/>
                         <ul style={{listStyleType: 'none'}}>
                             <AboutMeListItem
                                 checkBoxSvg={true}
@@ -155,4 +172,4 @@ function AboutMe() {
     )
 }
 
-export {AboutMe}
+export { AboutMe }
