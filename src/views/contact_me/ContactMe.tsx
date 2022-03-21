@@ -15,7 +15,7 @@ function ContactMe() {
                                          subtitle={'My contact information is listed below'}/>
                     <ul style={{listStyleType: 'none', paddingLeft: '20px'}}>
                         <ContactMeListItem title={'Phone Number'}
-                                           description={'+359 877321157'}
+                                           description={'+359 878375167'}
                                            phoneSvg={true}/>
                         <ContactMeListItem title={'Email Address'}
                                            description={'Click to send me an email'}
