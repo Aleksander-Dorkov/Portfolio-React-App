@@ -37,7 +37,7 @@ function AboutMe() {
                         </ul>
                         <AboutMeListTitle title={'VIVACOM'}
                                           role={'Full Stack Java Developer'}
-                                          date={'May 2020 - October 2021'}/>
+                                          date={'August 2020 - October 2021'}/>
                         <ul style={{listStyleType: 'none'}}>
                             <AboutMeListItem
                                 checkBoxSvg={true}

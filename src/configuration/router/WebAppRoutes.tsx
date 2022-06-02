@@ -1,6 +1,6 @@
 import React from "react";
-import {Redirect, Route, Switch} from "react-router-dom";
-import {LandingPage} from "../../views/LandingPage";
+import { Redirect, Route, Switch } from "react-router-dom";
+import { LandingPage } from "../../views/LandingPage";
 
 
 function WebAppRoutes() {
@@ -18,4 +18,4 @@ function WebAppRoutes() {
     )
 }
 
-export {WebAppRoutes}
+export { WebAppRoutes }

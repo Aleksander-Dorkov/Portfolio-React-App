@@ -43,8 +43,9 @@ function ParallaxHeader() {
                            rel="noopener noreferrer"
                            target="_blank"
                            className={'parallax-link ml-3'}>
-                            <GetAppIcon fontSize={'large'} className={'parallax-svg'}/>
-                            <Typography variant={'h5'} style={{display: 'inline'}}>Resume</Typography>
+                            {/*TODO Uncomment after resume eddit*/}
+                            {/*<GetAppIcon fontSize={'large'} className={'parallax-svg'}/>*/}
+                            {/*<Typography variant={'h5'} style={{display: 'inline'}}>Resume</Typography>*/}
                         </a>
 
                     </div>
