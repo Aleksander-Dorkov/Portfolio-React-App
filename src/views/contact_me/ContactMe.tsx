@@ -21,11 +21,10 @@ function ContactMe() {
                                            description={'Click to send me an email'}
                                            link={'mailto: aleksandar.dorkov@gmail.com'}
                                            mailSvg={true}/>
-                        {/*TODO Uncomment*/}
-                        {/*<ContactMeListItem title={'Resume'}*/}
-                        {/*                   description={'Click to read my resume online'}*/}
-                        {/*                   link={PDF as string}*/}
-                        {/*                   resumeSvg={true}/>*/}
+                        <ContactMeListItem title={'Resume'}
+                                           description={'Click to read my resume online'}
+                                           link={PDF as string}
+                                           resumeSvg={true}/>
 
                     </ul>
                     <ContactSectionTitle title={'Feedback'}
