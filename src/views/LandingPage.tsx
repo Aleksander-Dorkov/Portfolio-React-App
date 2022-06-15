@@ -15,6 +15,7 @@ import {CornerDiv} from "./courner_div/CornerDiv";
 
 
 function LandingPage() {
+    console.log('');
     return (
         <>
             <CornerDiv/>
