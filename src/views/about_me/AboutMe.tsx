@@ -24,16 +24,19 @@ function AboutMe() {
                         <ul style={{listStyleType: 'none'}}>
                             <AboutMeListItem
                                 checkBoxSvg={true}
-                                value={'Created and updated RESTful APIs consumed by mobile applications'}/>
+                                value={'Optimized the workflow of the applications'}/>
                             <AboutMeListItem
                                 checkBoxSvg={true}
-                                value={'Maintained and enchased an existing Web Applications back-end and UI'}/>
+                                value={'Refactored the applications code to be more concise and easier to read.'}/>
                             <AboutMeListItem
                                 checkBoxSvg={true}
-                                value={'Implemented unit and integration tests and documented the code'}/>
+                                value={'Secured the backend with spring security and JWT'}/>
                             <AboutMeListItem
                                 checkBoxSvg={true}
-                                value={'Securing backend applications with Spring Security and JWT'}/>
+                                value={'Reviewed other people’s code and helped them improve their merge requests'}/>
+                            <AboutMeListItem
+                                checkBoxSvg={true}
+                                value={'Implemented UI changes and new UI functionalities (Angular)'}/>
                         </ul>
                         <AboutMeListTitle title={'VIVACOM'}
                                           role={'Full Stack Java Developer'}
