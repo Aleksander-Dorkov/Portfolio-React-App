@@ -24,16 +24,19 @@ function AboutMe() {
                         <ul style={{listStyleType: 'none'}}>
                             <AboutMeListItem
                                 checkBoxSvg={true}
-                                value={'Integrated our APIs with casino game providers'}/>
+                                value={'Designed and implemented REST endpoints for casino game providers to integrate with our API, and contributed to the development of the service and repository layers of the application'}/>
                             <AboutMeListItem
                                 checkBoxSvg={true}
-                                value={'Migrated Apache Thrift endpoints to GRPC'}/>
+                                value={'Migrated Apache Thrift endpoints to gRPC'}/>
                             <AboutMeListItem
                                 checkBoxSvg={true}
-                                value={'Monitored Sentry for errors and fixed bugs'}/>
+                                value={'Produced and consumed Kafka events'}/>
                             <AboutMeListItem
                                 checkBoxSvg={true}
-                                value={'Established communication between microservices with JSM (Kafka)'}/>
+                                value={'Monitored Sentry for errors and resolved bugs to ensure application stability'}/>
+                            <AboutMeListItem
+                                checkBoxSvg={true}
+                                value={'Refactored the applications code to enhance codebase readability and maintainability'}/>
                             <AboutMeListItem
                                 checkBoxSvg={true}
                                 value={'Reviewed other people’s code and helped them improve their merge requests'}/>
@@ -45,10 +48,7 @@ function AboutMe() {
                         <ul style={{listStyleType: 'none'}}>
                             <AboutMeListItem
                                 checkBoxSvg={true}
-                                value={'Optimized the workflow of the applications'}/>
-                            <AboutMeListItem
-                                checkBoxSvg={true}
-                                value={'Refactored the applications code to be more concise and easier to read.'}/>
+                                value={'Optimized application workflows to improve overall performance and user experience'}/>
                             <AboutMeListItem
                                 checkBoxSvg={true}
                                 value={'Secured the backend with spring security and JWT'}/>
@@ -57,7 +57,7 @@ function AboutMe() {
                                 value={'Reviewed other people’s code and helped them improve their merge requests'}/>
                             <AboutMeListItem
                                 checkBoxSvg={true}
-                                value={'Implemented UI changes and new UI functionalities (Angular)'}/>
+                                value={'Implemented UI changes and new UI functionalities in Angular'}/>
                         </ul>
                         {/*VIVACOM*/}
                         <AboutMeListTitle title={'VIVACOM'}
@@ -69,7 +69,7 @@ function AboutMe() {
                                 value={'Created and updated RESTful APIs consumed by mobile applications'}/>
                             <AboutMeListItem
                                 checkBoxSvg={true}
-                                value={'Maintained and enchased an existing Web Applications back-end and UI'}/>
+                                value={'Maintained and enhanced an existing Web Applications back-end and UI'}/>
                             <AboutMeListItem
                                 checkBoxSvg={true}
                                 value={'Designed web clients to consume RESTful web services'}/>
