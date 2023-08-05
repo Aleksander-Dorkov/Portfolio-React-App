@@ -30,24 +30,12 @@ function FrontEnd() {
                     tooltip={'Angular'}
                     animation={'animate__backInRight'} />
                 <Skill
-                    svgUrl={'https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg'}
-                    tooltip={'React'}
-                    animation={'animate__backInRight'} />
-                <Skill
                     svgUrl={'https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-icon.svg'}
                     tooltip={'Bootstrap'}
                     animation={'animate__backInRight'} />
                 <Skill
-                    svgUrl={'https://raw.githubusercontent.com/leungwensen/svg-icon/b84b3f3a3da329b7c1d02346865f8e98beb05413/dist/svg/logos/redux.svg'}
-                    tooltip={'React-Redux'}
-                    animation={'animate__backInRight'} />
-                <Skill
-                    svgUrl={'https://cdn.worldvectorlogo.com/logos/material-ui-1.svg'}
-                    tooltip={'Material-UI'}
-                    animation={'animate__backInRight'} />
-                <Skill
-                    svgUrl={'https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg'}
-                    tooltip={'Ant Design'}
+                    svgUrl={'https://clarity.design/assets/images/clarity-logo.svg'}
+                    tooltip={'Clarity Design'}
                     animation={'animate__backInRight'} />
                 <Skill
                     svgUrl={'https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg'}
