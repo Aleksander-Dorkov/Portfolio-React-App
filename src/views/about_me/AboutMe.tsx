@@ -16,11 +16,32 @@ function AboutMe() {
                     </Grid>
                     <Grid item={true} xs={11} md={8} className={'ml-4'}>
                         {/*previous jobs*/}
-                        {/*VIVACOM*/}
                         <AboutMeSectionTitle title={'Software Engineer work experience'}/>
+                        {/*OpenTag*/}
+                        <AboutMeListTitle title={'OpenTag'}
+                                          role={'Java Developer'}
+                                          date={'Aug 2022 - Present'}/>
+                        <ul style={{listStyleType: 'none'}}>
+                            <AboutMeListItem
+                                checkBoxSvg={true}
+                                value={'Integrated our APIs with casino game providers'}/>
+                            <AboutMeListItem
+                                checkBoxSvg={true}
+                                value={'Migrated Apache Thrift endpoints to GRPC'}/>
+                            <AboutMeListItem
+                                checkBoxSvg={true}
+                                value={'Monitored Sentry for errors and fixed bugs'}/>
+                            <AboutMeListItem
+                                checkBoxSvg={true}
+                                value={'Established communication between microservices with JSM (Kafka)'}/>
+                            <AboutMeListItem
+                                checkBoxSvg={true}
+                                value={'Reviewed other people’s code and helped them improve their merge requests'}/>
+                        </ul>
+                        {/*VMware*/}
                         <AboutMeListTitle title={'VMware contract'}
                                           role={'Full Stack Java Developer'}
-                                          date={'November 2021 - Present'}/>
+                                          date={'November 2021 - Aug 2022'}/>
                         <ul style={{listStyleType: 'none'}}>
                             <AboutMeListItem
                                 checkBoxSvg={true}
@@ -38,6 +59,7 @@ function AboutMe() {
                                 checkBoxSvg={true}
                                 value={'Implemented UI changes and new UI functionalities (Angular)'}/>
                         </ul>
+                        {/*VIVACOM*/}
                         <AboutMeListTitle title={'VIVACOM'}
                                           role={'Full Stack Java Developer'}
                                           date={'December 2020 - October 2021'}/>

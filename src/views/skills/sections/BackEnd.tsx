@@ -13,22 +13,22 @@ function BackEnd() {
                     tooltip={'Java'}
                     animation={'animate__backInLeft'}/>
                 <Skill
-                    svgUrl={'https://spring.io/images/projects/spring-boot-7f2e24fb962501672cc91ccd285ed2ba.svg'}
+                    svgUrl={'https://spring.io/img/projects/spring-boot.svg'}
                     tooltip={'Spring Framework'}
                     animation={'animate__backInLeft'}/>
                 <Skill svgUrl={'https://www.vectorlogo.zone/logos/springio/springio-icon.svg'}
                        tooltip={'Spring Web'}
                        animation={'animate__backInLeft'}/>
+                {/*<Skill*/}
+                {/*    svgUrl={'https://spring.io/img/projects/spring-cloud.svg'}*/}
+                {/*    tooltip={'Spring Cloud'}*/}
+                {/*    animation={'animate__backInLeft'}/>*/}
                 <Skill
-                    svgUrl={'https://avatars.githubusercontent.com/u/7815877?s=200&v=4'}
-                    tooltip={'Spring Cloud'}
-                    animation={'animate__backInLeft'}/>
-                <Skill
-                    svgUrl={'https://spring.io/images/projects/spring-security-b712a4cdb778e72eb28b8c55ec39dbd1.svg'}
+                    svgUrl={'https://spring.io/img/projects/spring-security.svg'}
                     tooltip={'Spring Security'}
                     animation={'animate__backInLeft'}/>
                 <Skill
-                    svgUrl={'https://spring.io/images/projects/spring-data-79cc203ed8c54191215a60f9e5dc638f.svg'}
+                    svgUrl={'https://spring.io/img/projects/spring-data.svg'}
                     tooltip={'Spring Data JPA'}
                     animation={'animate__backInLeft'}/>
                 <Skill
@@ -38,8 +38,12 @@ function BackEnd() {
                 <Skill svgUrl={'https://www.thymeleaf.org/images/thymeleaf.png'}
                        tooltip={'Thymeleaf and JSP'}
                        animation={'animate__backInLeft'}/>
-                <Skill svgUrl={'https://www.vectorlogo.zone/logos/apache_activemq/apache_activemq-icon.svg'}
-                       tooltip={'ActiveMQ Artemis'}
+                <Skill
+                    svgUrl={'https://www.vectorlogo.zone/logos/grpcio/grpcio-ar21.svg'}
+                    tooltip={'GRPC'}
+                    animation={'animate__backInLeft'}/>
+                <Skill svgUrl={'https://www.vectorlogo.zone/logos/apache_kafka/apache_kafka-icon.svg'}
+                       tooltip={'Kafka'}
                        animation={'animate__backInLeft'}/>
                 <Skill
                     svgUrl={'https://junit.org/junit5/assets/img/junit5-logo.png'}

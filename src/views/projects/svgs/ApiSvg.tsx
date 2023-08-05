@@ -9,9 +9,9 @@ function ApiSvg() {
         display: 'inline-block',
         position: 'relative',
         top: '10px',
-        left: '-2px'
+        left: '-8px'
     } as CSSProperties
-    const apiSvg = 'https://image.flaticon.com/icons/png/512/603/603197.png';
+    const apiSvg = 'https://cdn-icons-png.flaticon.com/512/603/603197.png';
 
     return (
         <>
