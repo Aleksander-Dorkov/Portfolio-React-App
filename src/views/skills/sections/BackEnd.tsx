@@ -40,7 +40,7 @@ function BackEnd() {
                        animation={'animate__backInLeft'}/>
                 <Skill
                     svgUrl={'https://www.vectorlogo.zone/logos/grpcio/grpcio-ar21.svg'}
-                    tooltip={'GRPC'}
+                    tooltip={'gRPC'}
                     animation={'animate__backInLeft'}/>
                 <Skill svgUrl={'https://www.vectorlogo.zone/logos/apache_kafka/apache_kafka-icon.svg'}
                        tooltip={'Kafka'}
