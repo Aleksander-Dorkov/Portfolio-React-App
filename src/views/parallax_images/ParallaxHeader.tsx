@@ -30,8 +30,7 @@ function ParallaxHeader() {
                         <Typography variant={'h1'} style={{display: 'inline', color: '#00affb'}}> Dorkov</Typography>
                         <Typography variant={'h3'} className={'ml-3'}>Software Engineer</Typography>
 
-
-                        <a href="https://github.com/Aleksander-D-92"
+                        <a href="https://github.com/Aleksander-Dorkov"
                            target={'_blank'}
                            rel="noopener noreferrer"
                            className={'parallax-link ml-3'}>
